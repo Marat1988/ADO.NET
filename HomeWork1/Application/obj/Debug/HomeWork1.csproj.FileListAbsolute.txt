@@ -1,0 +1,14 @@
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\bin\Debug\HomeWork1.exe.config
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\bin\Debug\HomeWork1.exe
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\bin\Debug\HomeWork1.pdb
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\obj\Debug\HomeWork1.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\obj\Debug\HomeWork1.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\obj\Debug\HomeWork1.exe
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\obj\Debug\HomeWork1.pdb
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\Application\bin\Debug\HomeWork1.exe.config
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\Application\bin\Debug\HomeWork1.exe
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\Application\bin\Debug\HomeWork1.pdb
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\Application\obj\Debug\HomeWork1.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\Application\obj\Debug\HomeWork1.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\Application\obj\Debug\HomeWork1.exe
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\Application\obj\Debug\HomeWork1.pdb
