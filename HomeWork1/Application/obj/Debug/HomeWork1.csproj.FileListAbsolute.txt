@@ -12,3 +12,10 @@ C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\Application\obj\Debug\HomeWork1.c
 C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\Application\obj\Debug\HomeWork1.csproj.CoreCompileInputs.cache
 C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\Application\obj\Debug\HomeWork1.exe
 C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork1\Application\obj\Debug\HomeWork1.pdb
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork1\Application\bin\Debug\HomeWork1.exe.config
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork1\Application\bin\Debug\HomeWork1.exe
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork1\Application\bin\Debug\HomeWork1.pdb
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork1\Application\obj\Debug\HomeWork1.csproj.AssemblyReference.cache
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork1\Application\obj\Debug\HomeWork1.csproj.CoreCompileInputs.cache
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork1\Application\obj\Debug\HomeWork1.exe
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork1\Application\obj\Debug\HomeWork1.pdb
