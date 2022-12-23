@@ -35,9 +35,10 @@
 <li>Показать овощи и фрукты с калорийностью в указанном диапазоне;</li>
 <li>Показать все овощи и фрукты, у которых цвет желтый или красный.</li>
 </ol>
+
 #
 
-# <b>Примечание</b>
+<b>Примечания</b>
 <ol>
 <li>Сначала запускаем скрипт на выполнение (файл Скрипт.sql)</li>
 <li>В приложении (в папке Application) в файле AppConfig.config (тег &lt;connectionStrings&gt;) указываем свое имя сервера, и, при необходимости, идентификационные данные, например &lt;add name="MyConnString" connectionString="MyServer; Initial Catalog=WareHouse; Integrated Security=SSPI;"/&gt;</li>
