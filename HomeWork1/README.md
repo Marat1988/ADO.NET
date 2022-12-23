@@ -40,6 +40,7 @@
 # <b>Примечание</b>
 <ol>
 <li>Сначала запускаем скрипт на выполнение (файл Скрипт.sql)</li>
-<li>В приложении (в папке Application) в файле AppConfig.config (тег <connectionStrings>) указываем свой имя сервера, и, при необходимости, идентификационные данные, например <add name="MyConnString" connectionString="MyServer; Initial Catalog=WareHouse; Integrated Security=SSPI;"/></li>
+<li>В приложении (в папке Application) в файле AppConfig.config (тег &lt;connectionStrings&gt;) указываем свое имя сервера, и, при необходимости, идентификационные данные, например &lt;add name="MyConnString" connectionString="MyServer; Initial Catalog=WareHouse; Integrated Security=SSPI;"/&gt;</li>
+<li>После смены имени сервера пересобираем проект и все должно быть заебись.</li>
 <li>Решил сделать консольное приложение.</li>
 </ol>
