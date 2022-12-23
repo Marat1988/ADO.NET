@@ -78,60 +78,70 @@ namespace HomeWork1
             RunSql("SELECT * FROM vw_ShowInfoProduct");
         }
         #endregion
+
         #region Отображение всех названий овощей и фруктов
         public static void ShowInfoNameProduct()
         {
             RunSql("SELECT [Name product] FROM vw_ShowInfoProduct");
         }
         #endregion
+
         #region Отображение всех цветов
         public static void ShowInfoColor()
         {
             RunSql("SELECT DISTINCT Color FROM vw_ShowInfoProduct");
         }
         #endregion
+
         #region Показать максимальную калорийность"
         public static void ShowInfoMaxCaloric()
         {
             RunSql("SELECT MAX(Caloric) FROM vw_ShowInfoProduct");
         }
         #endregion
+
         #region Показать минимальную калорийность
         public static void ShowInfoMinCaloric()
         {
             RunSql("SELECT MIN(Caloric) FROM vw_ShowInfoProduct");
         }
         #endregion
+
         #region Показать среднюю калорийность
         public static void ShowInfoAvgCaloric()
         {
             RunSql("SELECT AVG(Caloric) FROM vw_ShowInfoProduct");
         }
         #endregion
+
         #region Показать количество овощей
         public static void ShowInfoCountVeggie()
         {
             RunSql("SELECT COUNT(*) FROM TypeProducts tp INNER JOIN Product p ON tp.TypeProductId = p.TypeProductId WHERE tp.TypeProductId = 1");
         }
         #endregion
+
         #region Показать количество фруктов
         public static void ShowInfoCountFruit()
         {
             RunSql("SELECT COUNT(*) FROM TypeProducts tp INNER JOIN Product p ON tp.TypeProductId = p.TypeProductId WHERE tp.TypeProductId = 2");
         }
         #endregion
+
         #region Показать количество овощей и фруктов заданного цвета
         public static void ShowInfoProductColorCount()
         {
             RunStorecProc("up_sel_ShowInfoProductColorCount");
         }
         #endregion
+
         #region Показать количество овощей фруктов каждого цвета
         public static void CountVegetablesFruitsEveryoneColor()
         {
             RunSql("SELECT p.Color, COUNT(CASE WHEN tp.TypeProductId=1 THEN p.Id END) AS [Count vegetable], COUNT(CASE WHEN tp.TypeProductId = 2 THEN p.Id END) AS [Count fruit] FROM TypeProducts tp INNER JOIN Product p ON tp.TypeProductId = p.TypeProductId GROUP BY p.Color");
         }
         #endregion
+
         #region Показать овощи и фрукты с калорийностью ниже указанной
         public static void ShowInfoCaloricBelowSpecified()
         {
@@ -142,6 +152,7 @@ namespace HomeWork1
                 Console.WriteLine("Не корректный ввод");
         }
         #endregion
+
         #region Показать овощи и фрукты с калорийностью выже указанной
         public static void ShowInfoCaloricAboveSpecified()
         {
@@ -152,6 +163,7 @@ namespace HomeWork1
                 Console.WriteLine("Не корректный ввод");
         }
         #endregion
+
         #region Показать овощи и фрукты с калорийностью в указанном диапазоне
         public static void ShowInfoCaloricBetweenRange()
         {
@@ -169,6 +181,7 @@ namespace HomeWork1
             }
         }
         #endregion
+
         #region Показать все овощи и фрукты, у которых цвет желтый или красный
         public static void ShowInfoColorProductYellowOrRed()
         {
