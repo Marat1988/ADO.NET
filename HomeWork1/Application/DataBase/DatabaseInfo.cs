@@ -71,7 +71,6 @@ namespace HomeWork1
                 conn?.Close();
             }
         }
-
         #region Отображение всей информации из таблицы с овощами и фруктами
         public static void ShowInfoProducts()
         {
@@ -124,9 +123,14 @@ namespace HomeWork1
         #region Показать количество фруктов
         public static void ShowInfoCountFruit()
         {
-            RunSql("SELECT COUNT(*) FROM TypeProducts tp INNER JOIN Product p ON tp.TypeProductId = p.TypeProductId WHERE tp.TypeProductId = 2");
+            // RunSql("SELECT COUNT(*) FROM TypeProducts tp INNER JOIN Product p ON tp.TypeProductId = p.TypeProductId WHERE tp.TypeProductId = 2");
+            RunSql("DELETE FROM TypeProducts WHERE TypeProductId = 2");
         }
         #endregion
+        public static void ShowInfoProductColor()
+        {
+
+        }
 
         #region Показать количество овощей и фруктов заданного цвета
         public static void ShowInfoProductColorCount()

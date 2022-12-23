@@ -26,7 +26,11 @@ CREATE TABLE TypeProducts --Типы продуктов
 GO
 /*Связываю таблицы*/
 ALTER TABLE Product
+<<<<<<< Updated upstream:HomeWork1/Скрипт.sql
 ADD CONSTRAINT FK_TypeProducts_TypeProductId FOREIGN KEY(TypeProductId) REFERENCES TypeProducts(TypeProductId);
+=======
+ADD CONSTRAINT FK_TypeProducts_TypeProductId FOREIGN KEY(TypeProductId) REFERENCES Product(TypeProductId);
+>>>>>>> Stashed changes:HomeWork1/1. Create Database.sql
 GO
 /*Заполнение тестовыми данными*/
 INSERT INTO TypeProducts([Name])

@@ -23,6 +23,7 @@ namespace HomeWork1
             menu.AddMenu("Показать среднюю калорийность", DatabaseInfo.ShowInfoAvgCaloric);
             menu.AddMenu("Показать количество овощей", DatabaseInfo.ShowInfoCountVeggie);
             menu.AddMenu("Показать количество фруктов", DatabaseInfo.ShowInfoCountFruit);
+<<<<<<< Updated upstream
             menu.AddMenu("Показать количество овощей и фруктов заданного цвета", DatabaseInfo.ShowInfoProductColorCount);
             menu.AddMenu("Показать количество овощей фруктов каждого цвета", DatabaseInfo.CountVegetablesFruitsEveryoneColor);
             menu.AddMenu("Показать овощи и фрукты с калорийностью ниже указанной", DatabaseInfo.ShowInfoCaloricBelowSpecified);
@@ -30,6 +31,11 @@ namespace HomeWork1
             menu.AddMenu("Показать овощи и фрукты с калорийностью в указанном диапазоне", DatabaseInfo.ShowInfoCaloricBetweenRange);
             menu.AddMenu("Показать все овощи и фрукты, у которых цвет желтый или красный", DatabaseInfo.ShowInfoColorProductYellowOrRed);
             menu.AddMenu("Выход из программы", ExitProgram);
+=======
+            menu.AddMenu("Показать количество овощей и фруктов заданного цвета", DatabaseInfo.ShowInfoProductColor);
+
+
+>>>>>>> Stashed changes
             menu.ShowMenu();
         }
 
