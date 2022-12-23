@@ -8,5 +8,6 @@ namespace HomeWork1
 {
     public class ConsoleMenu
     {
+
     }
 }
