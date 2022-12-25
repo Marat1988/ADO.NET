@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork2\Application\WareHouse\bin\Debug\WareHouse.exe.config
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork2\Application\WareHouse\bin\Debug\WareHouse.exe
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork2\Application\WareHouse\bin\Debug\WareHouse.pdb
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork2\Application\WareHouse\obj\Debug\WareHouse.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork2\Application\WareHouse\obj\Debug\WareHouse.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork2\Application\WareHouse\obj\Debug\WareHouse.exe
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork2\Application\WareHouse\obj\Debug\WareHouse.pdb
