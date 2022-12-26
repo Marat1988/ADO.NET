@@ -357,5 +357,36 @@ namespace WareHouse
         }
         #endregion
 
+        #region Показать информацию о поставщике с наибольшим количеством товаров на складе
+        public static void InfoSupplierBigCountProduct()
+        {
+            RunSql("SELECT TOP 1 [Supplier name], COUNT([Name product]) AS [Count product] FROM vw_InfoProducts GROUP BY [Supplier name] ORDER BY 2 DESC", "Поставщик с наибольшим количеством товара", out _);
+        }
+        #endregion
+
+        #region Показать информацию о поставщике с наименьшим количеством товаров на складе
+        public static void InfoSupplierLittleCountProduct()
+        {
+            RunSql("SELECT TOP 1 [Supplier name], COUNT([Name product]) AS [Count product] FROM vw_InfoProducts GROUP BY [Supplier name] ORDER BY 2", "Поставщик с наименьшим количеством товара", out _);
+        }
+        #endregion
+
+        #region Показать информацию о типе товаров с наибольшим количеством товаров на складе
+        public static void InfoTypeProductrBigCountProduct()
+        {
+            RunSql("SELECT TOP 1 [Type product name], COUNT([Name product]) AS [Count product] FROM vw_InfoProducts GROUP BY [Type product name] ORDER BY 2 DESC", "Тип товара с наибольшим количеством товара", out _);
+        }
+        #endregion
+
+        #region Показать информацию о типе товаров с наименьшим количеством товаров на складе
+        public static void InfoTypeProductrLittleCountProduct()
+        {
+            RunSql("SELECT TOP 1 [Type product name], COUNT([Name product]) AS [Count product] FROM vw_InfoProducts GROUP BY [Type product name] ORDER BY 2", "Тип товара с наименьшим количеством товара", out _);
+        }
+        #endregion
+
+
+
+
     }
 }
