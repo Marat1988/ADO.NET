@@ -3,7 +3,6 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
-
 namespace WareHouse
 {
     public static class DataBaseInfo
@@ -385,8 +384,20 @@ namespace WareHouse
         }
         #endregion
 
-
-
-
+        #region Показать товары с поставки, которых прошло заданное количество дней
+        public static void InfoProductDeliveryPassedNumberDays()
+        {
+            try
+            {
+                Console.Write("Введите количество дней: ");
+                int countDays = Convert.ToInt32(Console.ReadLine());
+                RunSql($"SELECT * FROM vw_InfoProducts WHERE DATEDIFF(dd,[Last date delivery], GETDATE())>={countDays}", $"Информация о товарах, с поставки которых прошло больше либо равно {countDays} дней", out _);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+        #endregion
     }
 }
