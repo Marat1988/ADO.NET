@@ -28,6 +28,12 @@ namespace WareHouse
             menu.AddMenu("Обновление информации о существующих товарах", DataBaseInfo.UpdateProduct);
             menu.AddMenu("Удаление товаров", DataBaseInfo.DeleteProduct);
 
+            menu.AddMenu("Показать информацию о поставщике с наибольшим количеством товаров на складе", DataBaseInfo.InfoSupplierBigCountProduct);
+            menu.AddMenu("Показать информацию о поставщике с наименьшим количеством товаров на складе", DataBaseInfo.InfoSupplierLittleCountProduct);
+            menu.AddMenu("Показать информацию о типе товаров с наибольшим количеством товаров на складе", DataBaseInfo.InfoTypeProductrBigCountProduct);
+            menu.AddMenu("Показать информацию о типе товаров с наименьшим количеством товаров на складе", DataBaseInfo.InfoTypeProductrLittleCountProduct);
+            menu.AddMenu("Показать товары с поставки, которых прошло заданное количество дней", DataBaseInfo.InfoProductDeliveryPassedNumberDays);
+
             menu.ShowMenu();
 
         }
