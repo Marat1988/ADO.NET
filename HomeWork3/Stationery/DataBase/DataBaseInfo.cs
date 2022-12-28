@@ -492,15 +492,18 @@ namespace Stationery
         #region Показать название канцтоваров, которые не продавались заданное количество дней.
         public static void StationaryNoSalesSetCountDays()
         {
-            SELECT*
-FROM
-(SELECT[Stationery name], MAX([Date sales]) AS[Last date sales]
-FROM vw_SalesALL
-GROUP BY[Stationery name]) d
-WHERE DATEDIFF(dd, [Last date sales], GETDATE()) > 10
-
+            try
+            {
+                Console.Write("Введите количество дней: ");
+                int countDays = Convert.ToInt32(Console.ReadLine());
+                RunSql($"SELECT d.[Stationery name] FROM (SELECT [Stationery name], MAX([Date sales]) AS [Last date sales] FROM vw_SalesALL GROUP BY[Stationery name]) d WHERE DATEDIFF(dd, [Last date sales], GETDATE()) >= {countDays}",
+                        $"Название канцтоваров, которые не продавались {countDays} и более дней", out _);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
-
         #endregion
 
     }

@@ -5,3 +5,10 @@ C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork3\Stationery\obj\Debug\St
 C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork3\Stationery\obj\Debug\Stationery.csproj.CoreCompileInputs.cache
 C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork3\Stationery\obj\Debug\Stationery.exe
 C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork3\Stationery\obj\Debug\Stationery.pdb
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork3\Stationery\bin\Debug\Stationery.exe.config
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork3\Stationery\bin\Debug\Stationery.exe
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork3\Stationery\bin\Debug\Stationery.pdb
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork3\Stationery\obj\Debug\Stationery.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork3\Stationery\obj\Debug\Stationery.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork3\Stationery\obj\Debug\Stationery.exe
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork3\Stationery\obj\Debug\Stationery.pdb
