@@ -180,7 +180,7 @@ VALUES ('ООО Тензор'),
 	   ('ООО Три брата');
 GO
 
-INSERT INTO Sales ([DateSale],BuyersId,ManagerId)
+INSERT INTO Sales ([DateSale], BuyersId, ManagerId)
 VALUES ('20221201', 1, 1),
 	   ('20221227', 2, 2);
 GO
