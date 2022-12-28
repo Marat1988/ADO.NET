@@ -190,7 +190,7 @@ BEGIN
  ELSE IF @BuyersId<0
  BEGIN
   IF EXISTS(SELECT * FROM Sales WHERE BuyersId=ABS(@BuyersId)) SET @LineAnswer='Удаление покупателя не возможно, т.к. на нем привязаны продажи'
-  IF NOT EXISTS(SELECT * FROM Sales WHERE Id=ABS(@BuyersId)) SET @LineAnswer='Указанный покупатель не существует или был удален'
+  IF NOT EXISTS(SELECT * FROM Buyers WHERE Id=ABS(@BuyersId)) SET @LineAnswer='Указанный покупатель не существует или был удален'
   IF @LineAnswer=''
   BEGIN
    DELETE FROM Buyers WHERE Id=ABS(@BuyersId)
