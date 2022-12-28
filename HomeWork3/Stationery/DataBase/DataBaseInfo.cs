@@ -428,6 +428,80 @@ namespace Stationery
 
         #endregion
 
+        #region Показать информацию о менеджере с наибольшим количеством продаж по количеству единиц
+        public static void BestManagerCountStationery()
+        {
+            RunSql("SELECT TOP 1 [Manager name], SUM([Count stationery]) FROM vw_SalesALL GROUP BY[Manager name] ORDER BY 2 DESC", "Информацию о менеджере с наибольшим количеством продаж по количеству единиц", out _);
+        }
+        #endregion
+
+        #region Показать информацию о менеджере по продажам с наибольшей общей суммой прибыли
+        public static void BestManagerSumProfit()
+        {
+            RunSql("SELECT TOP 1 [Manager name], SUM([Amount line sales] - ([Cost price line sales] *[Count stationery])) FROM vw_SalesALL GROUP BY [Manager name] ORDER BY 2 DESC", "Информацию о менеджере по продажам с наибольшей общей суммой прибыли", out _);
+        }
+
+        #endregion
+
+        #region Показать информацию о менеджере по продажам с наибольшей общей суммой прибыли за указанный промежуток времени
+        public static void BestManagerSumProfitDateBetween()
+        {
+            try
+            {
+                Console.Write("Введите время начала промежутка: ");
+                DateTime dateBegin = Convert.ToDateTime(Console.ReadLine());
+                Console.Write("Введите время конца промежутка: ");
+                DateTime dateEnd = Convert.ToDateTime(Console.ReadLine());
+                RunSql("SELECT TOP 1 [Manager name], SUM([Amount line sales] - ([Cost price line sales] *[Count stationery])) FROM vw_SalesALL WHERE [Date sales] BETWEEN '" + dateBegin + "' AND '" + dateEnd + "' GROUP BY [Manager name] ORDER BY 2 DESC", "Информация о менеджере по продажам с наибольшей общей суммой прибыли за указанный промежуток времени", out _);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+        #endregion
+
+        #region Показать информацию о фирме покупателе, которая купила на самую большую сумму
+        public static void BestBuyersSumSales()
+        {
+            RunSql("SELECT TOP 1 [Buyers name], SUM([amount line sales]) FROM vw_SalesALL GROUP BY [Buyers name] ORDER BY 2 DESC", "Информация о фирме покупателе, которая купила на самую большую сумму", out _);
+        }
+        #endregion
+
+        #region Показать информацию о типе канцтоваров с наибольшим количеством продаж по единицам
+        public static void BestTypeStationaryCountStationary()
+        {
+            RunSql("SELECT TOP 1 [Type stationery name], SUM([Count stationery]) FROM vw_SalesALL GROUP BY [Type stationery name] ORDER BY 2 DESC", "Информация о типе канцтоваров с наибольшим количеством продаж по единицам", out _);
+        }
+        #endregion
+
+        #region Показать информацию о типе самых прибыльных канцтоваров
+        public static void BestTypeStationeryProfit()
+        {
+            RunSql("SELECT TOP 1 [Type stationery name], SUM([Amount line sales] - ([Cost price line sales] *[Count stationery])) FROM vw_SalesALL GROUP BY [Type stationery name] ORDER BY 2 DESC", "Информацию о типе самых прибыльных канцтоваров", out _);
+        }
+        #endregion
+
+        #region Показать название самых популярных канцтоваров. Популярность высчитываем по количеству проданных единиц
+        public static void BestStationaryCountStationary()
+        {
+            RunSql("SELECT TOP 1 [Stationery name] FROM vw_SalesALL GROUP BY[Stationery name] ORDER BY SUM([Count stationery]) DESC", "Название самых популярных канцтоваров. Популярность высчитываем по количеству проданных единиц", out _);
+        }
+        #endregion
+
+        #region Показать название канцтоваров, которые не продавались заданное количество дней.
+        public static void StationaryNoSalesSetCountDays()
+        {
+            SELECT*
+FROM
+(SELECT[Stationery name], MAX([Date sales]) AS[Last date sales]
+FROM vw_SalesALL
+GROUP BY[Stationery name]) d
+WHERE DATEDIFF(dd, [Last date sales], GETDATE()) > 10
+
+        }
+
+        #endregion
 
     }
 }

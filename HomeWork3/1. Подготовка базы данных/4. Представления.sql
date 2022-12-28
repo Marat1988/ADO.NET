@@ -1,10 +1,10 @@
 USE DBSTATIONERY;
 GO
 
-CREATE VIEW vw_SalesALL
+CREATE VIEW [dbo].[vw_SalesALL]
 AS
 SELECT tst.[Name] AS [Type stationery name], s.[Name] AS [Stationery name], ls.CostPrice AS [Cost price line sales],
-	ls.Price AS [Price line sales], ls.[Count] AS [Count line sales], ls.Amount AS [amount line sales],
+	ls.Price AS [Price line sales], ls.[Count] AS [Count stationery], ls.Amount AS [Amount line sales],
 	sal.DateSale AS [Date sales], m.[Name] AS [Manager name], b.[Name] AS [Buyers name] 
 FROM LineSales ls
 INNER JOIN Stationery s ON ls.StationeryId=s.Id
