@@ -7,7 +7,7 @@ AFTER DELETE
 AS
 BEGIN
 INSERT ArchiveTypeStationery (Id, [Name], DateDelete)
-SELECT Id, [Name], GETDATE() AS DateDelete FROM deleted
+SELECT *, GETDATE() AS DateDelete FROM deleted
 END;
 GO
 
@@ -17,7 +17,7 @@ AFTER DELETE
 AS
 BEGIN
 INSERT ArchiveStationery (Id, [Name], CostPrice, TypeStationeryId, DateDelete)
-SELECT Id, [Name], CostPrice, TypeStationeryId, GETDATE() AS DateDelete FROM deleted
+SELECT *, GETDATE() AS DateDelete FROM deleted
 END;
 GO
 
@@ -27,7 +27,7 @@ AFTER DELETE
 AS
 BEGIN
 INSERT ArchiveSales (Id, DateSale, BuyersId, ManagerId, DateDelete)
-SELECT Id, DateSale, BuyersId, ManagerId, GETDATE() AS DateDelete FROM deleted
+SELECT *, GETDATE() AS DateDelete FROM deleted
 END;
 GO
 
@@ -37,7 +37,7 @@ AFTER DELETE
 AS
 BEGIN
 INSERT ArchiveManager (Id, [Name], DateDelete)
-SELECT Id, [Name], GETDATE() AS DateDelete FROM deleted
+SELECT *, GETDATE() AS DateDelete FROM deleted
 END;
 GO
 
@@ -47,7 +47,7 @@ AFTER DELETE
 AS
 BEGIN
 INSERT ArchiveLineSales (Id, SalesId, StationeryId, CostPrice, Price, [Count], Amount, DateDelete)
-SELECT Id, SalesId, StationeryId, CostPrice, Price, [Count], Amount, GETDATE() AS DateDelete FROM deleted
+SELECT *, GETDATE() AS DateDelete FROM deleted
 END;
 GO
 
@@ -57,6 +57,6 @@ AFTER DELETE
 AS
 BEGIN
 INSERT ArchiveBuyers (Id, [Name], DateDelete)
-SELECT Id, [Name], GETDATE() AS DateDelete FROM deleted
+SELECT *, GETDATE() AS DateDelete FROM deleted
 END;
 GO
