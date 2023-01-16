@@ -46,7 +46,7 @@ GO
 /*Запрос*/
 CREATE VIEW vw_ShowInfoProduct
 AS
-SELECT p.Name AS [Name product], tp.Name AS [Type name product], p.Color, p.Caloric
+SELECT p.Id, p.Name AS [Name product], tp.Name AS [Type name product], p.Color, p.Caloric
 FROM TypeProducts tp
 INNER JOIN Product p ON tp.TypeProductId=p.TypeProductId;
 GO
