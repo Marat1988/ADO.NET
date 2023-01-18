@@ -22,3 +22,17 @@ C:\Users\218 student\Downloads\ADO.NET-main (3)\ADO.NET-main\HomeWork6\2. Applic
 C:\Users\218 student\Downloads\ADO.NET-main (3)\ADO.NET-main\HomeWork6\2. Application\Country\obj\Debug\Country.exe
 C:\Users\218 student\Downloads\ADO.NET-main (3)\ADO.NET-main\HomeWork6\2. Application\Country\obj\Debug\Country.pdb
 C:\Users\218 student\Downloads\ADO.NET-main (3)\ADO.NET-main\HomeWork6\2. Application\Country\obj\Debug\Country.FormCity.resources
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork6\Country\bin\Debug\Country.exe.config
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork6\Country\bin\Debug\Country.exe
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork6\Country\bin\Debug\Country.pdb
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork6\Country\obj\Debug\Country.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork6\Country\obj\Debug\Country.FormCity.resources
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork6\Country\obj\Debug\Country.FormCountry.resources
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork6\Country\obj\Debug\Country.FormGuideCountry.resources
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork6\Country\obj\Debug\Country.Properties.Resources.resources
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork6\Country\obj\Debug\Country.csproj.GenerateResource.cache
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork6\Country\obj\Debug\Country.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork6\Country\obj\Debug\Country.exe
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork6\Country\obj\Debug\Country.pdb
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork6\Country\obj\Debug\Country.FormCapital.resources
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork6\Country\obj\Debug\Country.FormBigCity.resources

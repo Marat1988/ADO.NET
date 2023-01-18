@@ -20,13 +20,19 @@ namespace Country
         private void buttonCountry_Click(object sender, EventArgs e)
         {
             FormCountry formCountry = new FormCountry();
-            formCountry.Show();
+            formCountry.ShowDialog();
         }
 
         private void buttonCity_Click(object sender, EventArgs e)
         {
             FormCity formCity = new FormCity();
-            formCity.Show();
+            formCity.ShowDialog();
+        }
+
+        private void buttonCapital_Click(object sender, EventArgs e)
+        {
+            FormCapital formCapital = new FormCapital();
+            formCapital.ShowDialog();
         }
     }
 }

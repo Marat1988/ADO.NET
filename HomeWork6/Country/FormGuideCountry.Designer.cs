@@ -38,7 +38,7 @@ namespace Country
             // buttonCountry
             // 
             this.buttonCountry.Location = new System.Drawing.Point(71, 10);
-            this.buttonCountry.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonCountry.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCountry.Name = "buttonCountry";
             this.buttonCountry.Size = new System.Drawing.Size(136, 41);
             this.buttonCountry.TabIndex = 0;
@@ -49,7 +49,7 @@ namespace Country
             // buttonCity
             // 
             this.buttonCity.Location = new System.Drawing.Point(71, 64);
-            this.buttonCity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonCity.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCity.Name = "buttonCity";
             this.buttonCity.Size = new System.Drawing.Size(136, 41);
             this.buttonCity.TabIndex = 1;
@@ -60,17 +60,18 @@ namespace Country
             // buttonCapital
             // 
             this.buttonCapital.Location = new System.Drawing.Point(71, 117);
-            this.buttonCapital.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonCapital.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCapital.Name = "buttonCapital";
             this.buttonCapital.Size = new System.Drawing.Size(136, 41);
             this.buttonCapital.TabIndex = 2;
             this.buttonCapital.Text = "Справочник столиц";
             this.buttonCapital.UseVisualStyleBackColor = true;
+            this.buttonCapital.Click += new System.EventHandler(this.buttonCapital_Click);
             // 
             // buttonBigCity
             // 
             this.buttonBigCity.Location = new System.Drawing.Point(71, 170);
-            this.buttonBigCity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonBigCity.Margin = new System.Windows.Forms.Padding(2);
             this.buttonBigCity.Name = "buttonBigCity";
             this.buttonBigCity.Size = new System.Drawing.Size(136, 41);
             this.buttonBigCity.TabIndex = 3;
@@ -86,7 +87,7 @@ namespace Country
             this.Controls.Add(this.buttonCapital);
             this.Controls.Add(this.buttonCity);
             this.Controls.Add(this.buttonCountry);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormGuideCountry";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Справочник стран";

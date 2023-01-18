@@ -52,6 +52,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
+    <Compile Include="FormBigCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBigCity.Designer.cs">
+      <DependentUpon>FormBigCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCapital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCapital.Designer.cs">
+      <DependentUpon>FormCapital.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +84,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormBigCity.resx">
+      <DependentUpon>FormBigCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCapital.resx">
+      <DependentUpon>FormCapital.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCity.resx">
       <DependentUpon>FormCity.cs</DependentUpon>
     </EmbeddedResource>

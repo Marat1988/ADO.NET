@@ -90,6 +90,7 @@ namespace Country
             // 
             this.dataGridViewShowCountry.AllowUserToAddRows = false;
             this.dataGridViewShowCountry.AllowUserToDeleteRows = false;
+            this.dataGridViewShowCountry.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewShowCountry.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewShowCountry.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewShowCountry.Location = new System.Drawing.Point(2, 2);
@@ -187,6 +188,7 @@ namespace Country
             // 
             this.dataGridViewEditCountry.AllowUserToAddRows = false;
             this.dataGridViewEditCountry.AllowUserToDeleteRows = false;
+            this.dataGridViewEditCountry.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewEditCountry.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewEditCountry.Location = new System.Drawing.Point(20, 82);
             this.dataGridViewEditCountry.Margin = new System.Windows.Forms.Padding(2);
@@ -286,6 +288,7 @@ namespace Country
             // 
             this.dataGridViewDeleteCountry.AllowUserToAddRows = false;
             this.dataGridViewDeleteCountry.AllowUserToDeleteRows = false;
+            this.dataGridViewDeleteCountry.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewDeleteCountry.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDeleteCountry.Location = new System.Drawing.Point(11, 38);
             this.dataGridViewDeleteCountry.Margin = new System.Windows.Forms.Padding(2);
