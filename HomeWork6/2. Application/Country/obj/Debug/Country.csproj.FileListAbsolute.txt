@@ -1,0 +1,11 @@
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork6\2. Application\Country\bin\Debug\Country.exe.config
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork6\2. Application\Country\bin\Debug\Country.exe
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork6\2. Application\Country\bin\Debug\Country.pdb
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork6\2. Application\Country\obj\Debug\Country.csproj.AssemblyReference.cache
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork6\2. Application\Country\obj\Debug\Country.FormCountry.resources
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork6\2. Application\Country\obj\Debug\Country.Properties.Resources.resources
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork6\2. Application\Country\obj\Debug\Country.csproj.GenerateResource.cache
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork6\2. Application\Country\obj\Debug\Country.csproj.CoreCompileInputs.cache
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork6\2. Application\Country\obj\Debug\Country.exe
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork6\2. Application\Country\obj\Debug\Country.pdb
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork6\2. Application\Country\obj\Debug\Country.FormGuideCountry.resources
