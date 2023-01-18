@@ -18,3 +18,14 @@ C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork4-5\Application\obj\Debug\HomeWork4
 C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork4-5\Application\obj\Debug\HomeWork4-5.csproj.CoreCompileInputs.cache
 C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork4-5\Application\obj\Debug\HomeWork4-5.exe
 C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork4-5\Application\obj\Debug\HomeWork4-5.pdb
+C:\Users\218 student\Downloads\ADO.NET-main (2)\ADO.NET-main\HomeWork4-5\Application\bin\Debug\HomeWork4-5.exe.config
+C:\Users\218 student\Downloads\ADO.NET-main (2)\ADO.NET-main\HomeWork4-5\Application\bin\Debug\HomeWork4-5.exe
+C:\Users\218 student\Downloads\ADO.NET-main (2)\ADO.NET-main\HomeWork4-5\Application\bin\Debug\HomeWork4-5.pdb
+C:\Users\218 student\Downloads\ADO.NET-main (2)\ADO.NET-main\HomeWork4-5\Application\obj\Debug\HomeWork4-5.csproj.AssemblyReference.cache
+C:\Users\218 student\Downloads\ADO.NET-main (2)\ADO.NET-main\HomeWork4-5\Application\obj\Debug\HomeWork4-5.csproj.SuggestedBindingRedirects.cache
+C:\Users\218 student\Downloads\ADO.NET-main (2)\ADO.NET-main\HomeWork4-5\Application\obj\Debug\HomeWork4_5.FormMain.resources
+C:\Users\218 student\Downloads\ADO.NET-main (2)\ADO.NET-main\HomeWork4-5\Application\obj\Debug\HomeWork4_5.Properties.Resources.resources
+C:\Users\218 student\Downloads\ADO.NET-main (2)\ADO.NET-main\HomeWork4-5\Application\obj\Debug\HomeWork4-5.csproj.GenerateResource.cache
+C:\Users\218 student\Downloads\ADO.NET-main (2)\ADO.NET-main\HomeWork4-5\Application\obj\Debug\HomeWork4-5.csproj.CoreCompileInputs.cache
+C:\Users\218 student\Downloads\ADO.NET-main (2)\ADO.NET-main\HomeWork4-5\Application\obj\Debug\HomeWork4-5.exe
+C:\Users\218 student\Downloads\ADO.NET-main (2)\ADO.NET-main\HomeWork4-5\Application\obj\Debug\HomeWork4-5.pdb
