@@ -37,10 +37,10 @@ namespace Country
             // 
             // buttonCountry
             // 
-            this.buttonCountry.Location = new System.Drawing.Point(71, 10);
-            this.buttonCountry.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonCountry.Location = new System.Drawing.Point(95, 12);
+            this.buttonCountry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCountry.Name = "buttonCountry";
-            this.buttonCountry.Size = new System.Drawing.Size(136, 41);
+            this.buttonCountry.Size = new System.Drawing.Size(181, 50);
             this.buttonCountry.TabIndex = 0;
             this.buttonCountry.Text = "Справочник стран";
             this.buttonCountry.UseVisualStyleBackColor = true;
@@ -48,10 +48,10 @@ namespace Country
             // 
             // buttonCity
             // 
-            this.buttonCity.Location = new System.Drawing.Point(71, 64);
-            this.buttonCity.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonCity.Location = new System.Drawing.Point(95, 79);
+            this.buttonCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCity.Name = "buttonCity";
-            this.buttonCity.Size = new System.Drawing.Size(136, 41);
+            this.buttonCity.Size = new System.Drawing.Size(181, 50);
             this.buttonCity.TabIndex = 1;
             this.buttonCity.Text = "Справочник городов";
             this.buttonCity.UseVisualStyleBackColor = true;
@@ -59,10 +59,10 @@ namespace Country
             // 
             // buttonCapital
             // 
-            this.buttonCapital.Location = new System.Drawing.Point(71, 117);
-            this.buttonCapital.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonCapital.Location = new System.Drawing.Point(95, 144);
+            this.buttonCapital.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCapital.Name = "buttonCapital";
-            this.buttonCapital.Size = new System.Drawing.Size(136, 41);
+            this.buttonCapital.Size = new System.Drawing.Size(181, 50);
             this.buttonCapital.TabIndex = 2;
             this.buttonCapital.Text = "Справочник столиц";
             this.buttonCapital.UseVisualStyleBackColor = true;
@@ -70,24 +70,25 @@ namespace Country
             // 
             // buttonBigCity
             // 
-            this.buttonBigCity.Location = new System.Drawing.Point(71, 170);
-            this.buttonBigCity.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonBigCity.Location = new System.Drawing.Point(95, 209);
+            this.buttonBigCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonBigCity.Name = "buttonBigCity";
-            this.buttonBigCity.Size = new System.Drawing.Size(136, 41);
+            this.buttonBigCity.Size = new System.Drawing.Size(181, 50);
             this.buttonBigCity.TabIndex = 3;
             this.buttonBigCity.Text = "Справочник крупных городов";
             this.buttonBigCity.UseVisualStyleBackColor = true;
+            this.buttonBigCity.Click += new System.EventHandler(this.buttonBigCity_Click);
             // 
             // FormGuideCountry
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(288, 232);
+            this.ClientSize = new System.Drawing.Size(384, 286);
             this.Controls.Add(this.buttonBigCity);
             this.Controls.Add(this.buttonCapital);
             this.Controls.Add(this.buttonCity);
             this.Controls.Add(this.buttonCountry);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormGuideCountry";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Справочник стран";

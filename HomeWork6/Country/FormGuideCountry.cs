@@ -34,5 +34,11 @@ namespace Country
             FormCapital formCapital = new FormCapital();
             formCapital.ShowDialog();
         }
+
+        private void buttonBigCity_Click(object sender, EventArgs e)
+        {
+            FormBigCity formBigCity = new FormBigCity();
+            formBigCity.ShowDialog();
+        }
     }
 }
