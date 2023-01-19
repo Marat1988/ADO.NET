@@ -34,7 +34,7 @@ CREATE TABLE BigCity
 	CityId INT NOT NULL,
 	Budget MONEY NOT NULL,
 	CONSTRAINT PK_BigCity_CityId PRIMARY KEY (CityId),
-	CONSTRAINT CK_BigCity_Budge CHECK (Budger>0)
+	CONSTRAINT CK_BigCity_Budge CHECK (Budget>0)
 );
 GO
 
@@ -76,9 +76,52 @@ GO
 
 INSERT INTO Capital (CityId, Mayor, Area)
 VALUES (1, 'Собянин С.С.', 2561),
-	   (3, 'Рафал Тшасковский', 517);
+	   (2, 'Рафал Тшасковский', 517);
 GO
 
-INSERT INTO BigCity (CityId, Mayor)
-VALUES (1, 'Собянин С.С.');
+INSERT INTO BigCity (CityId, Budget)
+VALUES (1, 1234567);
 GO
+
+/*Хранимые процедуры*/
+
+/*Отображение топ-3 стран по наибольшему количе-
+ству жителей*/
+CREATE PROCEDURE up_sel_InfoTop3CountryCountPeople
+AS
+SELECT TOP 3 c.[Name] AS [Country name], SUM(c1.CountPeople) AS [Count people]
+FROM Country c
+INNER JOIN City c1 ON c.CountryId=c1.CountryId
+GROUP BY c.[Name]
+ORDER BY 1;
+GO
+
+/*Отображение топ-3 столиц по наибольшему количеству жителей*/
+CREATE PROCEDURE up_sel_InfoCapitalTop3CountPeople
+AS
+SELECT TOP 3 c1.[Name] AS [City name], c2.[Name] AS [Country name], SUM(c1.CountPeople) AS [Count people]
+FROM Capital c
+INNER JOIN City c1 ON c.CityId=c1.CityId
+INNER JOIN Country c2 ON c1.CountryId=c2.CountryId
+GROUP BY c1.[Name], c2.[Name]
+ORDER BY 3 DESC;
+GO
+
+/*Отобразить страну с самым большим количеством жителей*/
+CREATE PROCEDURE up_sel_TopInfoCountryCountPeople
+AS
+SELECT TOP 1 c.[Name] AS [Country name], SUM(c1.CountPeople) AS [Count people]
+FROM Country c
+INNER JOIN City c1 ON c.CountryId=c1.CountryId
+GROUP BY c.[Name]
+ORDER BY 2 DESC;
+GO
+
+/*Отобразить город с самым большим количеством жителей.*/
+CREATE PROCEDURE up_sel_TopCityCountPeople
+AS
+SELECT TOP 1 c.[Name] AS [Name city], CountPeople AS [Count people]
+FROM City c
+ORDER BY 2 DESC;
+GO
+

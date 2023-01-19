@@ -33,6 +33,7 @@ namespace Country
             this.buttonCity = new System.Windows.Forms.Button();
             this.buttonCapital = new System.Windows.Forms.Button();
             this.buttonBigCity = new System.Windows.Forms.Button();
+            this.buttonShowInfo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonCountry
@@ -79,11 +80,22 @@ namespace Country
             this.buttonBigCity.UseVisualStyleBackColor = true;
             this.buttonBigCity.Click += new System.EventHandler(this.buttonBigCity_Click);
             // 
+            // buttonShowInfo
+            // 
+            this.buttonShowInfo.Location = new System.Drawing.Point(95, 275);
+            this.buttonShowInfo.Name = "buttonShowInfo";
+            this.buttonShowInfo.Size = new System.Drawing.Size(181, 50);
+            this.buttonShowInfo.TabIndex = 4;
+            this.buttonShowInfo.Text = "Справочная информация";
+            this.buttonShowInfo.UseVisualStyleBackColor = true;
+            this.buttonShowInfo.Click += new System.EventHandler(this.buttonShowInfo_Click);
+            // 
             // FormGuideCountry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 286);
+            this.ClientSize = new System.Drawing.Size(384, 363);
+            this.Controls.Add(this.buttonShowInfo);
             this.Controls.Add(this.buttonBigCity);
             this.Controls.Add(this.buttonCapital);
             this.Controls.Add(this.buttonCity);
@@ -102,6 +114,7 @@ namespace Country
         private System.Windows.Forms.Button buttonCity;
         private System.Windows.Forms.Button buttonCapital;
         private System.Windows.Forms.Button buttonBigCity;
+        private System.Windows.Forms.Button buttonShowInfo;
     }
 }
 

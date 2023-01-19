@@ -40,5 +40,11 @@ namespace Country
             FormBigCity formBigCity = new FormBigCity();
             formBigCity.ShowDialog();
         }
+
+        private void buttonShowInfo_Click(object sender, EventArgs e)
+        {
+            FormShowInfo formShowInfo = new FormShowInfo();
+            formShowInfo.ShowDialog();
+        }
     }
 }

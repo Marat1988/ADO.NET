@@ -33,15 +33,15 @@ namespace Country
     partial void InsertBigCity(BigCity instance);
     partial void UpdateBigCity(BigCity instance);
     partial void DeleteBigCity(BigCity instance);
+    partial void InsertCountry(Country instance);
+    partial void UpdateCountry(Country instance);
+    partial void DeleteCountry(Country instance);
     partial void InsertCapital(Capital instance);
     partial void UpdateCapital(Capital instance);
     partial void DeleteCapital(Capital instance);
     partial void InsertCity(City instance);
     partial void UpdateCity(City instance);
     partial void DeleteCity(City instance);
-    partial void InsertCountry(Country instance);
-    partial void UpdateCountry(Country instance);
-    partial void DeleteCountry(Country instance);
     #endregion
 		
 		public DataClasses1DataContext() : 
@@ -82,6 +82,14 @@ namespace Country
 			}
 		}
 		
+		public System.Data.Linq.Table<Country> Country
+		{
+			get
+			{
+				return this.GetTable<Country>();
+			}
+		}
+		
 		public System.Data.Linq.Table<Capital> Capital
 		{
 			get
@@ -98,12 +106,32 @@ namespace Country
 			}
 		}
 		
-		public System.Data.Linq.Table<Country> Country
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.up_sel_InfoCapitalTop3CountPeople")]
+		public ISingleResult<up_sel_InfoCapitalTop3CountPeopleResult> up_sel_InfoCapitalTop3CountPeople()
 		{
-			get
-			{
-				return this.GetTable<Country>();
-			}
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<up_sel_InfoCapitalTop3CountPeopleResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.up_sel_InfoTop3CountryCountPeople")]
+		public ISingleResult<up_sel_InfoTop3CountryCountPeopleResult> up_sel_InfoTop3CountryCountPeople()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<up_sel_InfoTop3CountryCountPeopleResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.up_sel_TopInfoCountryCountPeople")]
+		public ISingleResult<up_sel_TopInfoCountryCountPeopleResult> up_sel_TopInfoCountryCountPeople()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<up_sel_TopInfoCountryCountPeopleResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.up_sel_TopCityCountPeople")]
+		public ISingleResult<up_sel_TopCityCountPeopleResult> up_sel_TopCityCountPeople()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<up_sel_TopCityCountPeopleResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -231,6 +259,144 @@ namespace Country
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Country")]
+	public partial class Country : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _CountryId;
+		
+		private string _Name;
+		
+		private int _Area;
+		
+		private EntitySet<City> _City;
+		
+    #region Определения метода расширяемости
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnCountryIdChanging(int value);
+    partial void OnCountryIdChanged();
+    partial void OnNameChanging(string value);
+    partial void OnNameChanged();
+    partial void OnAreaChanging(int value);
+    partial void OnAreaChanged();
+    #endregion
+		
+		public Country()
+		{
+			this._City = new EntitySet<City>(new Action<City>(this.attach_City), new Action<City>(this.detach_City));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CountryId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int CountryId
+		{
+			get
+			{
+				return this._CountryId;
+			}
+			set
+			{
+				if ((this._CountryId != value))
+				{
+					this.OnCountryIdChanging(value);
+					this.SendPropertyChanging();
+					this._CountryId = value;
+					this.SendPropertyChanged("CountryId");
+					this.OnCountryIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
+		public string Name
+		{
+			get
+			{
+				return this._Name;
+			}
+			set
+			{
+				if ((this._Name != value))
+				{
+					this.OnNameChanging(value);
+					this.SendPropertyChanging();
+					this._Name = value;
+					this.SendPropertyChanged("Name");
+					this.OnNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Area", DbType="Int NOT NULL")]
+		public int Area
+		{
+			get
+			{
+				return this._Area;
+			}
+			set
+			{
+				if ((this._Area != value))
+				{
+					this.OnAreaChanging(value);
+					this.SendPropertyChanging();
+					this._Area = value;
+					this.SendPropertyChanged("Area");
+					this.OnAreaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Country_City", Storage="_City", ThisKey="CountryId", OtherKey="CountryId")]
+		public EntitySet<City> City
+		{
+			get
+			{
+				return this._City;
+			}
+			set
+			{
+				this._City.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_City(City entity)
+		{
+			this.SendPropertyChanging();
+			entity.Country = this;
+		}
+		
+		private void detach_City(City entity)
+		{
+			this.SendPropertyChanging();
+			entity.Country = null;
 		}
 	}
 	
@@ -624,141 +790,197 @@ namespace Country
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Country")]
-	public partial class Country : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class up_sel_InfoCapitalTop3CountPeopleResult
 	{
 		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		private string _City_name;
 		
-		private int _CountryId;
+		private string _Country_name;
 		
-		private string _Name;
+		private System.Nullable<int> _Count_people;
 		
-		private int _Area;
-		
-		private EntitySet<City> _City;
-		
-    #region Определения метода расширяемости
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnCountryIdChanging(int value);
-    partial void OnCountryIdChanged();
-    partial void OnNameChanging(string value);
-    partial void OnNameChanged();
-    partial void OnAreaChanging(int value);
-    partial void OnAreaChanged();
-    #endregion
-		
-		public Country()
+		public up_sel_InfoCapitalTop3CountPeopleResult()
 		{
-			this._City = new EntitySet<City>(new Action<City>(this.attach_City), new Action<City>(this.detach_City));
-			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CountryId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int CountryId
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[City name]", Storage="_City_name", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
+		public string City_name
 		{
 			get
 			{
-				return this._CountryId;
+				return this._City_name;
 			}
 			set
 			{
-				if ((this._CountryId != value))
+				if ((this._City_name != value))
 				{
-					this.OnCountryIdChanging(value);
-					this.SendPropertyChanging();
-					this._CountryId = value;
-					this.SendPropertyChanged("CountryId");
-					this.OnCountryIdChanged();
+					this._City_name = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
-		public string Name
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Country name]", Storage="_Country_name", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
+		public string Country_name
 		{
 			get
 			{
-				return this._Name;
+				return this._Country_name;
 			}
 			set
 			{
-				if ((this._Name != value))
+				if ((this._Country_name != value))
 				{
-					this.OnNameChanging(value);
-					this.SendPropertyChanging();
-					this._Name = value;
-					this.SendPropertyChanged("Name");
-					this.OnNameChanged();
+					this._Country_name = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Area", DbType="Int NOT NULL")]
-		public int Area
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Count people]", Storage="_Count_people", DbType="Int")]
+		public System.Nullable<int> Count_people
 		{
 			get
 			{
-				return this._Area;
+				return this._Count_people;
 			}
 			set
 			{
-				if ((this._Area != value))
+				if ((this._Count_people != value))
 				{
-					this.OnAreaChanging(value);
-					this.SendPropertyChanging();
-					this._Area = value;
-					this.SendPropertyChanged("Area");
-					this.OnAreaChanged();
+					this._Count_people = value;
+				}
+			}
+		}
+	}
+	
+	public partial class up_sel_InfoTop3CountryCountPeopleResult
+	{
+		
+		private string _Country_name;
+		
+		private System.Nullable<int> _Count_people;
+		
+		public up_sel_InfoTop3CountryCountPeopleResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Country name]", Storage="_Country_name", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
+		public string Country_name
+		{
+			get
+			{
+				return this._Country_name;
+			}
+			set
+			{
+				if ((this._Country_name != value))
+				{
+					this._Country_name = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Country_City", Storage="_City", ThisKey="CountryId", OtherKey="CountryId")]
-		public EntitySet<City> City
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Count people]", Storage="_Count_people", DbType="Int")]
+		public System.Nullable<int> Count_people
 		{
 			get
 			{
-				return this._City;
+				return this._Count_people;
 			}
 			set
 			{
-				this._City.Assign(value);
+				if ((this._Count_people != value))
+				{
+					this._Count_people = value;
+				}
 			}
 		}
+	}
+	
+	public partial class up_sel_TopInfoCountryCountPeopleResult
+	{
 		
-		public event PropertyChangingEventHandler PropertyChanging;
+		private string _Country_name;
 		
-		public event PropertyChangedEventHandler PropertyChanged;
+		private System.Nullable<int> _Count_people;
 		
-		protected virtual void SendPropertyChanging()
+		public up_sel_TopInfoCountryCountPeopleResult()
 		{
-			if ((this.PropertyChanging != null))
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Country name]", Storage="_Country_name", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
+		public string Country_name
+		{
+			get
 			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
+				return this._Country_name;
 			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
+			set
 			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+				if ((this._Country_name != value))
+				{
+					this._Country_name = value;
+				}
 			}
 		}
 		
-		private void attach_City(City entity)
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Count people]", Storage="_Count_people", DbType="Int")]
+		public System.Nullable<int> Count_people
 		{
-			this.SendPropertyChanging();
-			entity.Country = this;
+			get
+			{
+				return this._Count_people;
+			}
+			set
+			{
+				if ((this._Count_people != value))
+				{
+					this._Count_people = value;
+				}
+			}
+		}
+	}
+	
+	public partial class up_sel_TopCityCountPeopleResult
+	{
+		
+		private string _Name_city;
+		
+		private int _Count_people;
+		
+		public up_sel_TopCityCountPeopleResult()
+		{
 		}
 		
-		private void detach_City(City entity)
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Name city]", Storage="_Name_city", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
+		public string Name_city
 		{
-			this.SendPropertyChanging();
-			entity.Country = null;
+			get
+			{
+				return this._Name_city;
+			}
+			set
+			{
+				if ((this._Name_city != value))
+				{
+					this._Name_city = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Count people]", Storage="_Count_people", DbType="Int NOT NULL")]
+		public int Count_people
+		{
+			get
+			{
+				return this._Count_people;
+			}
+			set
+			{
+				if ((this._Count_people != value))
+				{
+					this._Count_people = value;
+				}
+			}
 		}
 	}
 }

@@ -7,6 +7,14 @@
       <Association Name="City_BigCity" Member="City" ThisKey="CityId" OtherKey="CityId" Type="City" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.Country" Member="Country">
+    <Type Name="Country">
+      <Column Name="CountryId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Area" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Country_City" Member="City" ThisKey="CountryId" OtherKey="CountryId" Type="City" />
+    </Type>
+  </Table>
   <Table Name="dbo.Capital" Member="Capital">
     <Type Name="Capital">
       <Column Name="CityId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -26,12 +34,29 @@
       <Association Name="Country_City" Member="Country" ThisKey="CountryId" OtherKey="CountryId" Type="Country" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Country" Member="Country">
-    <Type Name="Country">
-      <Column Name="CountryId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="Area" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Association Name="Country_City" Member="City" ThisKey="CountryId" OtherKey="CountryId" Type="City" />
-    </Type>
-  </Table>
+  <Function Name="dbo.up_sel_InfoCapitalTop3CountPeople" Method="up_sel_InfoCapitalTop3CountPeople">
+    <ElementType Name="up_sel_InfoCapitalTop3CountPeopleResult">
+      <Column Name="[City name]" Member="City_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[Country name]" Member="Country_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[Count people]" Member="Count_people" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.up_sel_InfoTop3CountryCountPeople" Method="up_sel_InfoTop3CountryCountPeople">
+    <ElementType Name="up_sel_InfoTop3CountryCountPeopleResult">
+      <Column Name="[Country name]" Member="Country_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[Count people]" Member="Count_people" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.up_sel_TopInfoCountryCountPeople" Method="up_sel_TopInfoCountryCountPeople">
+    <ElementType Name="up_sel_TopInfoCountryCountPeopleResult">
+      <Column Name="[Country name]" Member="Country_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[Count people]" Member="Count_people" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.up_sel_TopCityCountPeople" Method="up_sel_TopCityCountPeople">
+    <ElementType Name="up_sel_TopCityCountPeopleResult">
+      <Column Name="[Name city]" Member="Name_city" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[Count people]" Member="Count_people" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
 </Database>

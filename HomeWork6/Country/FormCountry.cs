@@ -77,7 +77,7 @@ namespace Country
 
         private void dataGridViewShowCountry_SelectionChanged(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow row in dataGridViewEditCountry.SelectedRows)
+            foreach (DataGridViewRow row in dataGridViewShowCountry.SelectedRows)
             {
                 textBoxCountryNameEdit.Text = row.Cells[1].Value.ToString();
                 textBoxCountryAreaEdit.Text = row.Cells[2].Value.ToString();
