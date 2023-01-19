@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CountryDB" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=TBVM3;Initial Catalog=CountryDB;Integrated Security=True" SettingsObjectName="Country.Properties.Settings" SettingsPropertyName="CountryDBConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-FO5QIN3I\SQLEXPRESS;Initial Catalog=CountryDB;Integrated Security=True" SettingsObjectName="Country.Properties.Settings" SettingsPropertyName="CountryDBConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BigCity" Member="BigCity">
     <Type Name="BigCity">
       <Column Name="CityId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />

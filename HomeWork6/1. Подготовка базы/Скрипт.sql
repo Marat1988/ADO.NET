@@ -76,7 +76,7 @@ GO
 
 INSERT INTO Capital (CityId, Mayor, Area)
 VALUES (1, 'Собянин С.С.', 2561),
-	   (2, 'Рафал Тшасковский', 517);
+	   (3, 'Рафал Тшасковский', 517);
 GO
 
 INSERT INTO BigCity (CityId, Budget)

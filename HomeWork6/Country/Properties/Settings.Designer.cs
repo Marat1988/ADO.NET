@@ -26,7 +26,8 @@ namespace Country.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=TBVM3;Initial Catalog=CountryDB;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-FO5QIN3I\\SQLEXPRESS;Initial Catalog=CountryDB;Integrated Secur" +
+            "ity=True")]
         public string CountryDBConnectionString {
             get {
                 return ((string)(this["CountryDBConnectionString"]));

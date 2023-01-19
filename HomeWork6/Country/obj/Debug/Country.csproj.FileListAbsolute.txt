@@ -51,3 +51,4 @@ C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork6\Country\obj\Debug\Count
 C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork6\Country\obj\Debug\Country.exe
 C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork6\Country\obj\Debug\Country.pdb
 C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork6\Country\obj\Debug\Country.FormShowInfo.resources
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork6\Country\obj\Debug\Country.FormShowInfo.resources
