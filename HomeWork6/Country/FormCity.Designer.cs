@@ -70,21 +70,21 @@
             this.tabControlCity.Controls.Add(this.tabPageDelete);
             this.tabControlCity.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlCity.Location = new System.Drawing.Point(0, 0);
-            this.tabControlCity.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControlCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControlCity.Name = "tabControlCity";
             this.tabControlCity.SelectedIndex = 0;
-            this.tabControlCity.Size = new System.Drawing.Size(648, 406);
+            this.tabControlCity.Size = new System.Drawing.Size(868, 537);
             this.tabControlCity.TabIndex = 1;
             this.tabControlCity.SelectedIndexChanged += new System.EventHandler(this.tabControlCity_SelectedIndexChanged);
             // 
             // tabPageShow
             // 
             this.tabPageShow.Controls.Add(this.dataGridViewShowCity);
-            this.tabPageShow.Location = new System.Drawing.Point(4, 22);
-            this.tabPageShow.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPageShow.Location = new System.Drawing.Point(4, 25);
+            this.tabPageShow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPageShow.Name = "tabPageShow";
-            this.tabPageShow.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageShow.Size = new System.Drawing.Size(640, 380);
+            this.tabPageShow.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPageShow.Size = new System.Drawing.Size(860, 508);
             this.tabPageShow.TabIndex = 0;
             this.tabPageShow.Text = "Показать список";
             this.tabPageShow.UseVisualStyleBackColor = true;
@@ -96,15 +96,15 @@
             this.dataGridViewShowCity.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewShowCity.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewShowCity.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewShowCity.Location = new System.Drawing.Point(2, 2);
-            this.dataGridViewShowCity.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewShowCity.Location = new System.Drawing.Point(3, 2);
+            this.dataGridViewShowCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewShowCity.MultiSelect = false;
             this.dataGridViewShowCity.Name = "dataGridViewShowCity";
             this.dataGridViewShowCity.ReadOnly = true;
             this.dataGridViewShowCity.RowHeadersWidth = 51;
             this.dataGridViewShowCity.RowTemplate.Height = 24;
             this.dataGridViewShowCity.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewShowCity.Size = new System.Drawing.Size(636, 376);
+            this.dataGridViewShowCity.Size = new System.Drawing.Size(854, 504);
             this.dataGridViewShowCity.TabIndex = 0;
             this.dataGridViewShowCity.SelectionChanged += new System.EventHandler(this.dataGridViewShowCity_SelectionChanged);
             // 
@@ -117,41 +117,43 @@
             this.tabPageAdd.Controls.Add(this.textBoxCityNameAdd);
             this.tabPageAdd.Controls.Add(this.labelCityAreaAdd);
             this.tabPageAdd.Controls.Add(this.labelCityNameAdd);
-            this.tabPageAdd.Location = new System.Drawing.Point(4, 22);
-            this.tabPageAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPageAdd.Location = new System.Drawing.Point(4, 25);
+            this.tabPageAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPageAdd.Name = "tabPageAdd";
-            this.tabPageAdd.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageAdd.Size = new System.Drawing.Size(640, 380);
+            this.tabPageAdd.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPageAdd.Size = new System.Drawing.Size(860, 508);
             this.tabPageAdd.TabIndex = 1;
             this.tabPageAdd.Text = "Добавить";
             this.tabPageAdd.UseVisualStyleBackColor = true;
             // 
             // comboBoxChooseCountry
             // 
+            this.comboBoxChooseCountry.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxChooseCountry.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxChooseCountry.FormattingEnabled = true;
-            this.comboBoxChooseCountry.Location = new System.Drawing.Point(136, 83);
+            this.comboBoxChooseCountry.Location = new System.Drawing.Point(181, 102);
+            this.comboBoxChooseCountry.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxChooseCountry.Name = "comboBoxChooseCountry";
-            this.comboBoxChooseCountry.Size = new System.Drawing.Size(224, 21);
+            this.comboBoxChooseCountry.Size = new System.Drawing.Size(334, 24);
             this.comboBoxChooseCountry.TabIndex = 6;
             // 
             // labelChooseCountry
             // 
             this.labelChooseCountry.AutoSize = true;
-            this.labelChooseCountry.Location = new System.Drawing.Point(14, 86);
-            this.labelChooseCountry.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelChooseCountry.Location = new System.Drawing.Point(19, 106);
             this.labelChooseCountry.Name = "labelChooseCountry";
-            this.labelChooseCountry.Size = new System.Drawing.Size(97, 13);
+            this.labelChooseCountry.Size = new System.Drawing.Size(127, 17);
             this.labelChooseCountry.TabIndex = 5;
             this.labelChooseCountry.Text = "Выберите страну:";
             // 
             // buttonInputCity
             // 
             this.buttonInputCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonInputCity.Location = new System.Drawing.Point(17, 120);
-            this.buttonInputCity.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonInputCity.Location = new System.Drawing.Point(23, 148);
+            this.buttonInputCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonInputCity.Name = "buttonInputCity";
-            this.buttonInputCity.Size = new System.Drawing.Size(118, 39);
+            this.buttonInputCity.Size = new System.Drawing.Size(157, 48);
             this.buttonInputCity.TabIndex = 4;
             this.buttonInputCity.Text = "Добавить";
             this.buttonInputCity.UseVisualStyleBackColor = true;
@@ -159,37 +161,39 @@
             // 
             // textBoxCityCountPeopleAdd
             // 
-            this.textBoxCityCountPeopleAdd.Location = new System.Drawing.Point(195, 46);
-            this.textBoxCityCountPeopleAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCityCountPeopleAdd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxCityCountPeopleAdd.Location = new System.Drawing.Point(260, 57);
+            this.textBoxCityCountPeopleAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCityCountPeopleAdd.Name = "textBoxCityCountPeopleAdd";
-            this.textBoxCityCountPeopleAdd.Size = new System.Drawing.Size(165, 20);
+            this.textBoxCityCountPeopleAdd.Size = new System.Drawing.Size(255, 22);
             this.textBoxCityCountPeopleAdd.TabIndex = 3;
             // 
             // textBoxCityNameAdd
             // 
-            this.textBoxCityNameAdd.Location = new System.Drawing.Point(195, 13);
-            this.textBoxCityNameAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCityNameAdd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxCityNameAdd.Location = new System.Drawing.Point(260, 16);
+            this.textBoxCityNameAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCityNameAdd.Name = "textBoxCityNameAdd";
-            this.textBoxCityNameAdd.Size = new System.Drawing.Size(165, 20);
+            this.textBoxCityNameAdd.Size = new System.Drawing.Size(255, 22);
             this.textBoxCityNameAdd.TabIndex = 2;
             // 
             // labelCityAreaAdd
             // 
             this.labelCityAreaAdd.AutoSize = true;
-            this.labelCityAreaAdd.Location = new System.Drawing.Point(14, 49);
-            this.labelCityAreaAdd.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCityAreaAdd.Location = new System.Drawing.Point(19, 60);
             this.labelCityAreaAdd.Name = "labelCityAreaAdd";
-            this.labelCityAreaAdd.Size = new System.Drawing.Size(176, 13);
+            this.labelCityAreaAdd.Size = new System.Drawing.Size(230, 17);
             this.labelCityAreaAdd.TabIndex = 1;
             this.labelCityAreaAdd.Text = "Введите численность населения:";
             // 
             // labelCityNameAdd
             // 
             this.labelCityNameAdd.AutoSize = true;
-            this.labelCityNameAdd.Location = new System.Drawing.Point(14, 15);
-            this.labelCityNameAdd.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCityNameAdd.Location = new System.Drawing.Point(19, 18);
             this.labelCityNameAdd.Name = "labelCityNameAdd";
-            this.labelCityNameAdd.Size = new System.Drawing.Size(141, 13);
+            this.labelCityNameAdd.Size = new System.Drawing.Size(182, 17);
             this.labelCityNameAdd.TabIndex = 0;
             this.labelCityNameAdd.Text = "Введите название города:";
             // 
@@ -203,10 +207,10 @@
             this.tabPageEdit.Controls.Add(this.labelCityCountPeopleEdit);
             this.tabPageEdit.Controls.Add(this.labelCityNameEdit);
             this.tabPageEdit.Controls.Add(this.buttonEditCity);
-            this.tabPageEdit.Location = new System.Drawing.Point(4, 22);
-            this.tabPageEdit.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPageEdit.Location = new System.Drawing.Point(4, 25);
+            this.tabPageEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPageEdit.Name = "tabPageEdit";
-            this.tabPageEdit.Size = new System.Drawing.Size(640, 380);
+            this.tabPageEdit.Size = new System.Drawing.Size(860, 508);
             this.tabPageEdit.TabIndex = 2;
             this.tabPageEdit.Text = "Изменить";
             this.tabPageEdit.UseVisualStyleBackColor = true;
@@ -214,82 +218,89 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 87);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(26, 97);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 13);
+            this.label1.Size = new System.Drawing.Size(127, 17);
             this.label1.TabIndex = 12;
             this.label1.Text = "Выберите страну:";
             // 
             // comboBoxChooseEditCountry
             // 
+            this.comboBoxChooseEditCountry.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxChooseEditCountry.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxChooseEditCountry.FormattingEnabled = true;
-            this.comboBoxChooseEditCountry.Location = new System.Drawing.Point(120, 84);
+            this.comboBoxChooseEditCountry.Location = new System.Drawing.Point(160, 94);
+            this.comboBoxChooseEditCountry.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxChooseEditCountry.Name = "comboBoxChooseEditCountry";
-            this.comboBoxChooseEditCountry.Size = new System.Drawing.Size(350, 21);
+            this.comboBoxChooseEditCountry.Size = new System.Drawing.Size(465, 24);
             this.comboBoxChooseEditCountry.TabIndex = 11;
             // 
             // dataGridViewEditCity
             // 
             this.dataGridViewEditCity.AllowUserToAddRows = false;
             this.dataGridViewEditCity.AllowUserToDeleteRows = false;
+            this.dataGridViewEditCity.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewEditCity.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewEditCity.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewEditCity.Location = new System.Drawing.Point(20, 134);
-            this.dataGridViewEditCity.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewEditCity.Location = new System.Drawing.Point(26, 199);
+            this.dataGridViewEditCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewEditCity.MultiSelect = false;
             this.dataGridViewEditCity.Name = "dataGridViewEditCity";
             this.dataGridViewEditCity.ReadOnly = true;
             this.dataGridViewEditCity.RowHeadersWidth = 51;
             this.dataGridViewEditCity.RowTemplate.Height = 24;
             this.dataGridViewEditCity.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewEditCity.Size = new System.Drawing.Size(601, 227);
+            this.dataGridViewEditCity.Size = new System.Drawing.Size(599, 279);
             this.dataGridViewEditCity.TabIndex = 10;
+            this.dataGridViewEditCity.SelectionChanged += new System.EventHandler(this.dataGridViewShowCity_SelectionChanged);
             // 
             // textBoxCityCountPeopleEdit
             // 
-            this.textBoxCityCountPeopleEdit.Location = new System.Drawing.Point(232, 44);
-            this.textBoxCityCountPeopleEdit.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCityCountPeopleEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxCityCountPeopleEdit.Location = new System.Drawing.Point(309, 53);
+            this.textBoxCityCountPeopleEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCityCountPeopleEdit.Name = "textBoxCityCountPeopleEdit";
-            this.textBoxCityCountPeopleEdit.Size = new System.Drawing.Size(238, 20);
+            this.textBoxCityCountPeopleEdit.Size = new System.Drawing.Size(316, 22);
             this.textBoxCityCountPeopleEdit.TabIndex = 9;
             // 
             // textBoxCityNameEdit
             // 
-            this.textBoxCityNameEdit.Location = new System.Drawing.Point(232, 10);
-            this.textBoxCityNameEdit.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCityNameEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxCityNameEdit.Location = new System.Drawing.Point(309, 12);
+            this.textBoxCityNameEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCityNameEdit.Name = "textBoxCityNameEdit";
-            this.textBoxCityNameEdit.Size = new System.Drawing.Size(238, 20);
+            this.textBoxCityNameEdit.Size = new System.Drawing.Size(316, 22);
             this.textBoxCityNameEdit.TabIndex = 8;
             // 
             // labelCityCountPeopleEdit
             // 
             this.labelCityCountPeopleEdit.AutoSize = true;
-            this.labelCityCountPeopleEdit.Location = new System.Drawing.Point(18, 47);
-            this.labelCityCountPeopleEdit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCityCountPeopleEdit.Location = new System.Drawing.Point(24, 58);
             this.labelCityCountPeopleEdit.Name = "labelCityCountPeopleEdit";
-            this.labelCityCountPeopleEdit.Size = new System.Drawing.Size(210, 13);
+            this.labelCityCountPeopleEdit.Size = new System.Drawing.Size(274, 17);
             this.labelCityCountPeopleEdit.TabIndex = 7;
             this.labelCityCountPeopleEdit.Text = "Введите новую численность населения:";
             // 
             // labelCityNameEdit
             // 
             this.labelCityNameEdit.AutoSize = true;
-            this.labelCityNameEdit.Location = new System.Drawing.Point(17, 13);
-            this.labelCityNameEdit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelCityNameEdit.Location = new System.Drawing.Point(23, 16);
             this.labelCityNameEdit.Name = "labelCityNameEdit";
-            this.labelCityNameEdit.Size = new System.Drawing.Size(174, 13);
+            this.labelCityNameEdit.Size = new System.Drawing.Size(225, 17);
             this.labelCityNameEdit.TabIndex = 6;
             this.labelCityNameEdit.Text = "Введите новое название города:";
             // 
             // buttonEditCity
             // 
             this.buttonEditCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonEditCity.Location = new System.Drawing.Point(503, 33);
-            this.buttonEditCity.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonEditCity.Location = new System.Drawing.Point(29, 134);
+            this.buttonEditCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEditCity.Name = "buttonEditCity";
-            this.buttonEditCity.Size = new System.Drawing.Size(118, 39);
+            this.buttonEditCity.Size = new System.Drawing.Size(157, 48);
             this.buttonEditCity.TabIndex = 5;
             this.buttonEditCity.Text = "Изменить";
             this.buttonEditCity.UseVisualStyleBackColor = true;
@@ -300,10 +311,10 @@
             this.tabPageDelete.Controls.Add(this.labelDeleteCity);
             this.tabPageDelete.Controls.Add(this.buttonDeleteCity);
             this.tabPageDelete.Controls.Add(this.dataGridViewDeleteCity);
-            this.tabPageDelete.Location = new System.Drawing.Point(4, 22);
-            this.tabPageDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPageDelete.Location = new System.Drawing.Point(4, 25);
+            this.tabPageDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPageDelete.Name = "tabPageDelete";
-            this.tabPageDelete.Size = new System.Drawing.Size(640, 380);
+            this.tabPageDelete.Size = new System.Drawing.Size(860, 508);
             this.tabPageDelete.TabIndex = 3;
             this.tabPageDelete.Text = "Удалить";
             this.tabPageDelete.UseVisualStyleBackColor = true;
@@ -311,19 +322,20 @@
             // labelDeleteCity
             // 
             this.labelDeleteCity.AutoSize = true;
-            this.labelDeleteCity.Location = new System.Drawing.Point(8, 14);
+            this.labelDeleteCity.Location = new System.Drawing.Point(11, 17);
+            this.labelDeleteCity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDeleteCity.Name = "labelDeleteCity";
-            this.labelDeleteCity.Size = new System.Drawing.Size(296, 13);
+            this.labelDeleteCity.Size = new System.Drawing.Size(382, 17);
             this.labelDeleteCity.TabIndex = 13;
             this.labelDeleteCity.Text = "Выберите город из списка и нажмите на кнопку удалить";
             // 
             // buttonDeleteCity
             // 
             this.buttonDeleteCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDeleteCity.Location = new System.Drawing.Point(11, 304);
-            this.buttonDeleteCity.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonDeleteCity.Location = new System.Drawing.Point(15, 374);
+            this.buttonDeleteCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonDeleteCity.Name = "buttonDeleteCity";
-            this.buttonDeleteCity.Size = new System.Drawing.Size(118, 47);
+            this.buttonDeleteCity.Size = new System.Drawing.Size(157, 58);
             this.buttonDeleteCity.TabIndex = 12;
             this.buttonDeleteCity.Text = "Удалить";
             this.buttonDeleteCity.UseVisualStyleBackColor = true;
@@ -333,25 +345,29 @@
             // 
             this.dataGridViewDeleteCity.AllowUserToAddRows = false;
             this.dataGridViewDeleteCity.AllowUserToDeleteRows = false;
+            this.dataGridViewDeleteCity.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewDeleteCity.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewDeleteCity.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDeleteCity.Location = new System.Drawing.Point(11, 38);
-            this.dataGridViewDeleteCity.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewDeleteCity.Location = new System.Drawing.Point(15, 47);
+            this.dataGridViewDeleteCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewDeleteCity.MultiSelect = false;
             this.dataGridViewDeleteCity.Name = "dataGridViewDeleteCity";
             this.dataGridViewDeleteCity.ReadOnly = true;
             this.dataGridViewDeleteCity.RowHeadersWidth = 51;
             this.dataGridViewDeleteCity.RowTemplate.Height = 24;
             this.dataGridViewDeleteCity.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewDeleteCity.Size = new System.Drawing.Size(601, 252);
+            this.dataGridViewDeleteCity.Size = new System.Drawing.Size(801, 310);
             this.dataGridViewDeleteCity.TabIndex = 11;
+            this.dataGridViewDeleteCity.SelectionChanged += new System.EventHandler(this.dataGridViewShowCity_SelectionChanged);
             // 
             // FormCity
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(648, 406);
+            this.ClientSize = new System.Drawing.Size(868, 537);
             this.Controls.Add(this.tabControlCity);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormCity";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Города";

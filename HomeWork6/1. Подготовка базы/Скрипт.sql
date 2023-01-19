@@ -32,9 +32,9 @@ GO
 CREATE TABLE BigCity
 (
 	CityId INT NOT NULL,
-	Mayor VARCHAR(100) NOT NULL,
+	Budget MONEY NOT NULL,
 	CONSTRAINT PK_BigCity_CityId PRIMARY KEY (CityId),
-	CONSTRAINT CK_BigCity_CountPeople CHECK (Mayor<>'')
+	CONSTRAINT CK_BigCity_Budge CHECK (Budger>0)
 );
 GO
 

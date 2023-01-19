@@ -115,7 +115,7 @@ namespace Country
 		
 		private int _CityId;
 		
-		private string _Mayor;
+		private decimal _Budget;
 		
 		private EntityRef<City> _City;
 		
@@ -125,8 +125,8 @@ namespace Country
     partial void OnCreated();
     partial void OnCityIdChanging(int value);
     partial void OnCityIdChanged();
-    partial void OnMayorChanging(string value);
-    partial void OnMayorChanged();
+    partial void OnBudgetChanging(decimal value);
+    partial void OnBudgetChanged();
     #endregion
 		
 		public BigCity()
@@ -159,22 +159,22 @@ namespace Country
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Mayor", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
-		public string Mayor
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Budget", DbType="Money NOT NULL")]
+		public decimal Budget
 		{
 			get
 			{
-				return this._Mayor;
+				return this._Budget;
 			}
 			set
 			{
-				if ((this._Mayor != value))
+				if ((this._Budget != value))
 				{
-					this.OnMayorChanging(value);
+					this.OnBudgetChanging(value);
 					this.SendPropertyChanging();
-					this._Mayor = value;
-					this.SendPropertyChanged("Mayor");
-					this.OnMayorChanged();
+					this._Budget = value;
+					this.SendPropertyChanged("Budget");
+					this.OnBudgetChanged();
 				}
 			}
 		}
