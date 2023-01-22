@@ -1,0 +1,16 @@
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork7\GameEntity\bin\Debug\GameEntity.dll.config
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork7\GameEntity\bin\Debug\GameEntity.dll
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork7\GameEntity\bin\Debug\GameEntity.pdb
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork7\GameEntity\bin\Debug\BECodeFirst.dll
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork7\GameEntity\bin\Debug\EntityFramework.dll
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork7\GameEntity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork7\GameEntity\bin\Debug\BECodeFirst.pdb
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork7\GameEntity\bin\Debug\BECodeFirst.dll.config
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork7\GameEntity\bin\Debug\EntityFramework.xml
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork7\GameEntity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork7\GameEntity\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork7\GameEntity\obj\Debug\GameEntity.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork7\GameEntity\obj\Debug\GameEntity.csproj.CopyComplete
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork7\GameEntity\obj\Debug\GameEntity.dll
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork7\GameEntity\obj\Debug\GameEntity.pdb
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork7\GameEntity\obj\Debug\GameEntity.csproj.AssemblyReference.cache
