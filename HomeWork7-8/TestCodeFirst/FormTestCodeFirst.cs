@@ -146,13 +146,11 @@ namespace TestCodeFirst
                 MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void ShowInfo<T>(DataGridView dataGridView, List<T> sql)
         {
             dataGridView.DataSource = null;
             dataGridView.DataSource = sql;
         }
-
         private void FormTestCodeFirst_FormClosed(object sender, FormClosedEventArgs e)
         {
             Properties.Settings.Default.SqlServer = textBoxNameSQLServer.Text;
