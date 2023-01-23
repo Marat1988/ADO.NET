@@ -18,6 +18,10 @@ namespace TestCodeFirst
         {
             InitializeComponent();
             comboBoxChooseTypeConnection.SelectedIndex = 0;
+            textBoxNameSQLServer.Text = Properties.Settings.Default.SqlServer;
+            textBoxNameDB.Text = Properties.Settings.Default.NameDB;
+            textBoxLogin.Text = Properties.Settings.Default.Login;
+            textBoxPassword.Text = Properties.Settings.Default.Password;
         }
 
         private void comboBoxChooseTypeConnection_SelectedIndexChanged(object sender, EventArgs e)
@@ -147,6 +151,15 @@ namespace TestCodeFirst
         {
             dataGridView.DataSource = null;
             dataGridView.DataSource = sql;
+        }
+
+        private void FormTestCodeFirst_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Properties.Settings.Default.SqlServer = textBoxNameSQLServer.Text;
+            Properties.Settings.Default.NameDB = textBoxNameDB.Text;
+            Properties.Settings.Default.Login = textBoxLogin.Text;
+            Properties.Settings.Default.Password = textBoxPassword.Text;
+            Properties.Settings.Default.Save();
         }
     }
 }
