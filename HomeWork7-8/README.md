@@ -42,4 +42,5 @@
 
 BECodeFirst - dll проект. Хранит информацию об играх (необъодимые классы)<br>
 GameEntity - dll проект. Хранит класс наследник от DbContext и необходимые DbSet<br>
-TestCodeFirst - основное проект (WinForm). Его и запускаем.<br>
+TestCodeFirst - основное проект (WinForm). Его и запускаем<br>
+Screen - просто скрины приложения.<br>
