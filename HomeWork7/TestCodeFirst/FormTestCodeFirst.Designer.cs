@@ -29,7 +29,7 @@ namespace TestCodeFirst
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonCreateDataBase = new System.Windows.Forms.Button();
             this.tabControlTestCodeFirst = new System.Windows.Forms.TabControl();
             this.tabPageConnection = new System.Windows.Forms.TabPage();
             this.textBoxNameDB = new System.Windows.Forms.TextBox();
@@ -42,31 +42,45 @@ namespace TestCodeFirst
             this.comboBoxChooseTypeConnection = new System.Windows.Forms.ComboBox();
             this.textBoxNameSQLServer = new System.Windows.Forms.TextBox();
             this.labelNameSQLServer = new System.Windows.Forms.Label();
-            this.tabPageShowInfo = new System.Windows.Forms.TabPage();
+            this.tabPageShowInfoCompany = new System.Windows.Forms.TabPage();
+            this.dataGridViewShowInfoCompany = new System.Windows.Forms.DataGridView();
+            this.tabPageStyleGame = new System.Windows.Forms.TabPage();
+            this.dataGridViewStyleGame = new System.Windows.Forms.DataGridView();
+            this.tabPageShowInfoGame = new System.Windows.Forms.TabPage();
+            this.dataGridViewShowInfoGames = new System.Windows.Forms.DataGridView();
             this.tabControlTestCodeFirst.SuspendLayout();
             this.tabPageConnection.SuspendLayout();
+            this.tabPageShowInfoCompany.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewShowInfoCompany)).BeginInit();
+            this.tabPageStyleGame.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStyleGame)).BeginInit();
+            this.tabPageShowInfoGame.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewShowInfoGames)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonCreateDataBase
             // 
-            this.button1.Location = new System.Drawing.Point(8, 187);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(224, 56);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Подключиться и создать базу данных";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonCreateDataBase.Location = new System.Drawing.Point(8, 187);
+            this.buttonCreateDataBase.Name = "buttonCreateDataBase";
+            this.buttonCreateDataBase.Size = new System.Drawing.Size(224, 56);
+            this.buttonCreateDataBase.TabIndex = 0;
+            this.buttonCreateDataBase.Text = "Подключиться и создать базу данных";
+            this.buttonCreateDataBase.UseVisualStyleBackColor = true;
+            this.buttonCreateDataBase.Click += new System.EventHandler(this.buttonCreateDataBase_Click);
             // 
             // tabControlTestCodeFirst
             // 
             this.tabControlTestCodeFirst.Controls.Add(this.tabPageConnection);
-            this.tabControlTestCodeFirst.Controls.Add(this.tabPageShowInfo);
+            this.tabControlTestCodeFirst.Controls.Add(this.tabPageShowInfoCompany);
+            this.tabControlTestCodeFirst.Controls.Add(this.tabPageStyleGame);
+            this.tabControlTestCodeFirst.Controls.Add(this.tabPageShowInfoGame);
             this.tabControlTestCodeFirst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlTestCodeFirst.Location = new System.Drawing.Point(0, 0);
             this.tabControlTestCodeFirst.Name = "tabControlTestCodeFirst";
             this.tabControlTestCodeFirst.SelectedIndex = 0;
             this.tabControlTestCodeFirst.Size = new System.Drawing.Size(928, 535);
             this.tabControlTestCodeFirst.TabIndex = 1;
+            this.tabControlTestCodeFirst.SelectedIndexChanged += new System.EventHandler(this.tabControlTestCodeFirst_SelectedIndexChanged);
             // 
             // tabPageConnection
             // 
@@ -80,7 +94,7 @@ namespace TestCodeFirst
             this.tabPageConnection.Controls.Add(this.comboBoxChooseTypeConnection);
             this.tabPageConnection.Controls.Add(this.textBoxNameSQLServer);
             this.tabPageConnection.Controls.Add(this.labelNameSQLServer);
-            this.tabPageConnection.Controls.Add(this.button1);
+            this.tabPageConnection.Controls.Add(this.buttonCreateDataBase);
             this.tabPageConnection.Location = new System.Drawing.Point(4, 22);
             this.tabPageConnection.Name = "tabPageConnection";
             this.tabPageConnection.Padding = new System.Windows.Forms.Padding(3);
@@ -181,15 +195,78 @@ namespace TestCodeFirst
             this.labelNameSQLServer.TabIndex = 1;
             this.labelNameSQLServer.Text = "Введите имя Вашего SQL сервера:";
             // 
-            // tabPageShowInfo
+            // tabPageShowInfoCompany
             // 
-            this.tabPageShowInfo.Location = new System.Drawing.Point(4, 22);
-            this.tabPageShowInfo.Name = "tabPageShowInfo";
-            this.tabPageShowInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageShowInfo.Size = new System.Drawing.Size(920, 509);
-            this.tabPageShowInfo.TabIndex = 1;
-            this.tabPageShowInfo.Text = "Вывод информации";
-            this.tabPageShowInfo.UseVisualStyleBackColor = true;
+            this.tabPageShowInfoCompany.Controls.Add(this.dataGridViewShowInfoCompany);
+            this.tabPageShowInfoCompany.Location = new System.Drawing.Point(4, 22);
+            this.tabPageShowInfoCompany.Name = "tabPageShowInfoCompany";
+            this.tabPageShowInfoCompany.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageShowInfoCompany.Size = new System.Drawing.Size(920, 509);
+            this.tabPageShowInfoCompany.TabIndex = 1;
+            this.tabPageShowInfoCompany.Text = "Вывод информации. Разработчики игр";
+            this.tabPageShowInfoCompany.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewShowInfoCompany
+            // 
+            this.dataGridViewShowInfoCompany.AllowUserToAddRows = false;
+            this.dataGridViewShowInfoCompany.AllowUserToDeleteRows = false;
+            this.dataGridViewShowInfoCompany.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewShowInfoCompany.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewShowInfoCompany.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewShowInfoCompany.MultiSelect = false;
+            this.dataGridViewShowInfoCompany.Name = "dataGridViewShowInfoCompany";
+            this.dataGridViewShowInfoCompany.ReadOnly = true;
+            this.dataGridViewShowInfoCompany.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewShowInfoCompany.Size = new System.Drawing.Size(914, 503);
+            this.dataGridViewShowInfoCompany.TabIndex = 0;
+            // 
+            // tabPageStyleGame
+            // 
+            this.tabPageStyleGame.Controls.Add(this.dataGridViewStyleGame);
+            this.tabPageStyleGame.Location = new System.Drawing.Point(4, 22);
+            this.tabPageStyleGame.Name = "tabPageStyleGame";
+            this.tabPageStyleGame.Size = new System.Drawing.Size(920, 509);
+            this.tabPageStyleGame.TabIndex = 2;
+            this.tabPageStyleGame.Text = "Вывод информации.  Стили игры";
+            this.tabPageStyleGame.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewStyleGame
+            // 
+            this.dataGridViewStyleGame.AllowUserToAddRows = false;
+            this.dataGridViewStyleGame.AllowUserToDeleteRows = false;
+            this.dataGridViewStyleGame.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewStyleGame.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewStyleGame.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewStyleGame.MultiSelect = false;
+            this.dataGridViewStyleGame.Name = "dataGridViewStyleGame";
+            this.dataGridViewStyleGame.ReadOnly = true;
+            this.dataGridViewStyleGame.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewStyleGame.Size = new System.Drawing.Size(920, 509);
+            this.dataGridViewStyleGame.TabIndex = 1;
+            // 
+            // tabPageShowInfoGame
+            // 
+            this.tabPageShowInfoGame.Controls.Add(this.dataGridViewShowInfoGames);
+            this.tabPageShowInfoGame.Location = new System.Drawing.Point(4, 22);
+            this.tabPageShowInfoGame.Name = "tabPageShowInfoGame";
+            this.tabPageShowInfoGame.Size = new System.Drawing.Size(920, 509);
+            this.tabPageShowInfoGame.TabIndex = 3;
+            this.tabPageShowInfoGame.Text = "Вывод информации. Список игр";
+            this.tabPageShowInfoGame.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewShowInfoGames
+            // 
+            this.dataGridViewShowInfoGames.AllowUserToAddRows = false;
+            this.dataGridViewShowInfoGames.AllowUserToDeleteRows = false;
+            this.dataGridViewShowInfoGames.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewShowInfoGames.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewShowInfoGames.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewShowInfoGames.MultiSelect = false;
+            this.dataGridViewShowInfoGames.Name = "dataGridViewShowInfoGames";
+            this.dataGridViewShowInfoGames.ReadOnly = true;
+            this.dataGridViewShowInfoGames.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewShowInfoGames.Size = new System.Drawing.Size(920, 509);
+            this.dataGridViewShowInfoGames.TabIndex = 2;
             // 
             // FormTestCodeFirst
             // 
@@ -202,18 +279,24 @@ namespace TestCodeFirst
             this.tabControlTestCodeFirst.ResumeLayout(false);
             this.tabPageConnection.ResumeLayout(false);
             this.tabPageConnection.PerformLayout();
+            this.tabPageShowInfoCompany.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewShowInfoCompany)).EndInit();
+            this.tabPageStyleGame.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStyleGame)).EndInit();
+            this.tabPageShowInfoGame.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewShowInfoGames)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonCreateDataBase;
         private System.Windows.Forms.TabControl tabControlTestCodeFirst;
         private System.Windows.Forms.TabPage tabPageConnection;
         private System.Windows.Forms.TextBox textBoxNameSQLServer;
         private System.Windows.Forms.Label labelNameSQLServer;
-        private System.Windows.Forms.TabPage tabPageShowInfo;
+        private System.Windows.Forms.TabPage tabPageShowInfoCompany;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.TextBox textBoxLogin;
         private System.Windows.Forms.Label labelPassword;
@@ -222,6 +305,11 @@ namespace TestCodeFirst
         private System.Windows.Forms.ComboBox comboBoxChooseTypeConnection;
         private System.Windows.Forms.TextBox textBoxNameDB;
         private System.Windows.Forms.Label labelNameDB;
+        private System.Windows.Forms.DataGridView dataGridViewShowInfoCompany;
+        private System.Windows.Forms.TabPage tabPageStyleGame;
+        private System.Windows.Forms.DataGridView dataGridViewStyleGame;
+        private System.Windows.Forms.TabPage tabPageShowInfoGame;
+        private System.Windows.Forms.DataGridView dataGridViewShowInfoGames;
     }
 }
 
