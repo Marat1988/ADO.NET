@@ -65,7 +65,7 @@ namespace TestCodeFirst
             // buttonCreateDataBase
             // 
             this.buttonCreateDataBase.Location = new System.Drawing.Point(11, 230);
-            this.buttonCreateDataBase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCreateDataBase.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCreateDataBase.Name = "buttonCreateDataBase";
             this.buttonCreateDataBase.Size = new System.Drawing.Size(299, 69);
             this.buttonCreateDataBase.TabIndex = 0;
@@ -82,7 +82,7 @@ namespace TestCodeFirst
             this.tabControlTestCodeFirst.Controls.Add(this.tabPageShowInfoModeGame);
             this.tabControlTestCodeFirst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlTestCodeFirst.Location = new System.Drawing.Point(0, 0);
-            this.tabControlTestCodeFirst.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControlTestCodeFirst.Margin = new System.Windows.Forms.Padding(4);
             this.tabControlTestCodeFirst.Name = "tabControlTestCodeFirst";
             this.tabControlTestCodeFirst.SelectedIndex = 0;
             this.tabControlTestCodeFirst.Size = new System.Drawing.Size(1237, 658);
@@ -103,9 +103,9 @@ namespace TestCodeFirst
             this.tabPageConnection.Controls.Add(this.labelNameSQLServer);
             this.tabPageConnection.Controls.Add(this.buttonCreateDataBase);
             this.tabPageConnection.Location = new System.Drawing.Point(4, 25);
-            this.tabPageConnection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageConnection.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageConnection.Name = "tabPageConnection";
-            this.tabPageConnection.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageConnection.Padding = new System.Windows.Forms.Padding(4);
             this.tabPageConnection.Size = new System.Drawing.Size(1229, 629);
             this.tabPageConnection.TabIndex = 0;
             this.tabPageConnection.Text = "Подключение к БД";
@@ -114,7 +114,7 @@ namespace TestCodeFirst
             // textBoxNameDB
             // 
             this.textBoxNameDB.Location = new System.Drawing.Point(284, 181);
-            this.textBoxNameDB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxNameDB.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNameDB.Name = "textBoxNameDB";
             this.textBoxNameDB.Size = new System.Drawing.Size(313, 22);
             this.textBoxNameDB.TabIndex = 10;
@@ -134,7 +134,7 @@ namespace TestCodeFirst
             // 
             this.textBoxPassword.Enabled = false;
             this.textBoxPassword.Location = new System.Drawing.Point(321, 140);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(276, 22);
@@ -144,7 +144,7 @@ namespace TestCodeFirst
             // 
             this.textBoxLogin.Enabled = false;
             this.textBoxLogin.Location = new System.Drawing.Point(321, 102);
-            this.textBoxLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxLogin.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(276, 22);
             this.textBoxLogin.TabIndex = 7;
@@ -188,7 +188,7 @@ namespace TestCodeFirst
             "Проверка подлинности Windows",
             "Проверка подлинности SQL Server"});
             this.comboBoxChooseTypeConnection.Location = new System.Drawing.Point(321, 59);
-            this.comboBoxChooseTypeConnection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxChooseTypeConnection.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxChooseTypeConnection.Name = "comboBoxChooseTypeConnection";
             this.comboBoxChooseTypeConnection.Size = new System.Drawing.Size(276, 24);
             this.comboBoxChooseTypeConnection.TabIndex = 3;
@@ -197,7 +197,7 @@ namespace TestCodeFirst
             // textBoxNameSQLServer
             // 
             this.textBoxNameSQLServer.Location = new System.Drawing.Point(265, 16);
-            this.textBoxNameSQLServer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxNameSQLServer.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNameSQLServer.Name = "textBoxNameSQLServer";
             this.textBoxNameSQLServer.Size = new System.Drawing.Size(332, 22);
             this.textBoxNameSQLServer.TabIndex = 2;
@@ -217,9 +217,9 @@ namespace TestCodeFirst
             // 
             this.tabPageShowInfoCompany.Controls.Add(this.dataGridViewShowInfoCompany);
             this.tabPageShowInfoCompany.Location = new System.Drawing.Point(4, 25);
-            this.tabPageShowInfoCompany.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageShowInfoCompany.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageShowInfoCompany.Name = "tabPageShowInfoCompany";
-            this.tabPageShowInfoCompany.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageShowInfoCompany.Padding = new System.Windows.Forms.Padding(4);
             this.tabPageShowInfoCompany.Size = new System.Drawing.Size(1229, 629);
             this.tabPageShowInfoCompany.TabIndex = 1;
             this.tabPageShowInfoCompany.Text = "Вывод информации. Разработчики игр";
@@ -232,7 +232,7 @@ namespace TestCodeFirst
             this.dataGridViewShowInfoCompany.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewShowInfoCompany.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewShowInfoCompany.Location = new System.Drawing.Point(4, 4);
-            this.dataGridViewShowInfoCompany.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewShowInfoCompany.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewShowInfoCompany.MultiSelect = false;
             this.dataGridViewShowInfoCompany.Name = "dataGridViewShowInfoCompany";
             this.dataGridViewShowInfoCompany.ReadOnly = true;
@@ -245,7 +245,7 @@ namespace TestCodeFirst
             // 
             this.tabPageShowInfoStyleGame.Controls.Add(this.dataGridViewStyleGame);
             this.tabPageShowInfoStyleGame.Location = new System.Drawing.Point(4, 25);
-            this.tabPageShowInfoStyleGame.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageShowInfoStyleGame.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageShowInfoStyleGame.Name = "tabPageShowInfoStyleGame";
             this.tabPageShowInfoStyleGame.Size = new System.Drawing.Size(1229, 629);
             this.tabPageShowInfoStyleGame.TabIndex = 2;
@@ -259,7 +259,7 @@ namespace TestCodeFirst
             this.dataGridViewStyleGame.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewStyleGame.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewStyleGame.Location = new System.Drawing.Point(0, 0);
-            this.dataGridViewStyleGame.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewStyleGame.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewStyleGame.MultiSelect = false;
             this.dataGridViewStyleGame.Name = "dataGridViewStyleGame";
             this.dataGridViewStyleGame.ReadOnly = true;
@@ -272,7 +272,7 @@ namespace TestCodeFirst
             // 
             this.tabPageShowInfoGame.Controls.Add(this.dataGridViewShowInfoGames);
             this.tabPageShowInfoGame.Location = new System.Drawing.Point(4, 25);
-            this.tabPageShowInfoGame.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPageShowInfoGame.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageShowInfoGame.Name = "tabPageShowInfoGame";
             this.tabPageShowInfoGame.Size = new System.Drawing.Size(1229, 629);
             this.tabPageShowInfoGame.TabIndex = 3;
@@ -286,7 +286,7 @@ namespace TestCodeFirst
             this.dataGridViewShowInfoGames.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewShowInfoGames.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewShowInfoGames.Location = new System.Drawing.Point(0, 0);
-            this.dataGridViewShowInfoGames.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewShowInfoGames.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewShowInfoGames.MultiSelect = false;
             this.dataGridViewShowInfoGames.Name = "dataGridViewShowInfoGames";
             this.dataGridViewShowInfoGames.ReadOnly = true;
@@ -327,10 +327,10 @@ namespace TestCodeFirst
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1237, 658);
             this.Controls.Add(this.tabControlTestCodeFirst);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormTestCodeFirst";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Test code first";
+            this.Text = "Test code first entity framework";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tabControlTestCodeFirst.ResumeLayout(false);
             this.tabPageConnection.ResumeLayout(false);
