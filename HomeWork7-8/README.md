@@ -60,6 +60,7 @@ Screen - просто скрины приложения.<br>
 # 
 
 <b>Полезное видео</b><br>
+
 Чтобы вникнуть в тему рекомендую посмотреть видео:
 <ol>
 <li>https://drive.google.com/drive/folders/1c0cKOilNe6xKvu-PolsLVsFnvca1p54M</li>
