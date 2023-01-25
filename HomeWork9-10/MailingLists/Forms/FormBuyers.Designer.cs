@@ -33,11 +33,18 @@ namespace MailingLists.Forms
             this.tabPageShow = new System.Windows.Forms.TabPage();
             this.dataGridViewShowBuyers = new System.Windows.Forms.DataGridView();
             this.tabPageAdd = new System.Windows.Forms.TabPage();
+            this.comboBoxChooseCityAdd = new System.Windows.Forms.ComboBox();
+            this.labelCountryAdd = new System.Windows.Forms.Label();
+            this.dateTimePickerBuyersDateBirthDayAdd = new System.Windows.Forms.DateTimePicker();
             this.buttonInputBuyers = new System.Windows.Forms.Button();
             this.textBoxBuyersNameAdd = new System.Windows.Forms.TextBox();
             this.labelBuyersDateBirthDayAdd = new System.Windows.Forms.Label();
             this.labelBuyersNameAdd = new System.Windows.Forms.Label();
             this.tabPageEdit = new System.Windows.Forms.TabPage();
+            this.comboBoxChooseCityEdit = new System.Windows.Forms.ComboBox();
+            this.labelChooseBuyersCityEdit = new System.Windows.Forms.Label();
+            this.dateTimePickerBuyersDateBirthDayEdit = new System.Windows.Forms.DateTimePicker();
+            this.labelBuyersDateBirthDayEdit = new System.Windows.Forms.Label();
             this.dataGridViewEditBuyers = new System.Windows.Forms.DataGridView();
             this.textBoxBuyersNameEdit = new System.Windows.Forms.TextBox();
             this.labelBuyersNameEdit = new System.Windows.Forms.Label();
@@ -46,13 +53,6 @@ namespace MailingLists.Forms
             this.labelDeleteBuyers = new System.Windows.Forms.Label();
             this.buttonDeleteBuyers = new System.Windows.Forms.Button();
             this.dataGridViewDeleteBuyers = new System.Windows.Forms.DataGridView();
-            this.dateTimePickerBuyersDateBirthDayAdd = new System.Windows.Forms.DateTimePicker();
-            this.labelCountryAdd = new System.Windows.Forms.Label();
-            this.comboBoxChooseCountryAdd = new System.Windows.Forms.ComboBox();
-            this.comboBoxChooseBuyersCityEdit = new System.Windows.Forms.ComboBox();
-            this.labelChooseBuyersCityEdit = new System.Windows.Forms.Label();
-            this.dateTimePickerBuyersDateBirthDayEdit = new System.Windows.Forms.DateTimePicker();
-            this.labelBuyersDateBirthDayEdit = new System.Windows.Forms.Label();
             this.tabControlBuyers.SuspendLayout();
             this.tabPageShow.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewShowBuyers)).BeginInit();
@@ -76,6 +76,7 @@ namespace MailingLists.Forms
             this.tabControlBuyers.SelectedIndex = 0;
             this.tabControlBuyers.Size = new System.Drawing.Size(808, 505);
             this.tabControlBuyers.TabIndex = 2;
+            this.tabControlBuyers.SelectedIndexChanged += new System.EventHandler(this.tabControlBuyers_SelectedIndexChanged);
             // 
             // tabPageShow
             // 
@@ -106,10 +107,11 @@ namespace MailingLists.Forms
             this.dataGridViewShowBuyers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewShowBuyers.Size = new System.Drawing.Size(794, 472);
             this.dataGridViewShowBuyers.TabIndex = 0;
+            this.dataGridViewShowBuyers.SelectionChanged += new System.EventHandler(this.dataGridViewShowBuyers_SelectionChanged);
             // 
             // tabPageAdd
             // 
-            this.tabPageAdd.Controls.Add(this.comboBoxChooseCountryAdd);
+            this.tabPageAdd.Controls.Add(this.comboBoxChooseCityAdd);
             this.tabPageAdd.Controls.Add(this.labelCountryAdd);
             this.tabPageAdd.Controls.Add(this.dateTimePickerBuyersDateBirthDayAdd);
             this.tabPageAdd.Controls.Add(this.buttonInputBuyers);
@@ -125,6 +127,31 @@ namespace MailingLists.Forms
             this.tabPageAdd.Text = "Добавить";
             this.tabPageAdd.UseVisualStyleBackColor = true;
             // 
+            // comboBoxChooseCityAdd
+            // 
+            this.comboBoxChooseCityAdd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxChooseCityAdd.FormattingEnabled = true;
+            this.comboBoxChooseCityAdd.Location = new System.Drawing.Point(144, 94);
+            this.comboBoxChooseCityAdd.Name = "comboBoxChooseCityAdd";
+            this.comboBoxChooseCityAdd.Size = new System.Drawing.Size(282, 24);
+            this.comboBoxChooseCityAdd.TabIndex = 7;
+            // 
+            // labelCountryAdd
+            // 
+            this.labelCountryAdd.AutoSize = true;
+            this.labelCountryAdd.Location = new System.Drawing.Point(19, 97);
+            this.labelCountryAdd.Name = "labelCountryAdd";
+            this.labelCountryAdd.Size = new System.Drawing.Size(119, 17);
+            this.labelCountryAdd.TabIndex = 6;
+            this.labelCountryAdd.Text = "Выберите город:";
+            // 
+            // dateTimePickerBuyersDateBirthDayAdd
+            // 
+            this.dateTimePickerBuyersDateBirthDayAdd.Location = new System.Drawing.Point(195, 55);
+            this.dateTimePickerBuyersDateBirthDayAdd.Name = "dateTimePickerBuyersDateBirthDayAdd";
+            this.dateTimePickerBuyersDateBirthDayAdd.Size = new System.Drawing.Size(231, 22);
+            this.dateTimePickerBuyersDateBirthDayAdd.TabIndex = 5;
+            // 
             // buttonInputBuyers
             // 
             this.buttonInputBuyers.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -135,6 +162,7 @@ namespace MailingLists.Forms
             this.buttonInputBuyers.TabIndex = 4;
             this.buttonInputBuyers.Text = "Добавить";
             this.buttonInputBuyers.UseVisualStyleBackColor = true;
+            this.buttonInputBuyers.Click += new System.EventHandler(this.buttonInputBuyers_Click);
             // 
             // textBoxBuyersNameAdd
             // 
@@ -164,7 +192,7 @@ namespace MailingLists.Forms
             // 
             // tabPageEdit
             // 
-            this.tabPageEdit.Controls.Add(this.comboBoxChooseBuyersCityEdit);
+            this.tabPageEdit.Controls.Add(this.comboBoxChooseCityEdit);
             this.tabPageEdit.Controls.Add(this.labelChooseBuyersCityEdit);
             this.tabPageEdit.Controls.Add(this.dateTimePickerBuyersDateBirthDayEdit);
             this.tabPageEdit.Controls.Add(this.labelBuyersDateBirthDayEdit);
@@ -179,6 +207,40 @@ namespace MailingLists.Forms
             this.tabPageEdit.TabIndex = 2;
             this.tabPageEdit.Text = "Изменить";
             this.tabPageEdit.UseVisualStyleBackColor = true;
+            // 
+            // comboBoxChooseCityEdit
+            // 
+            this.comboBoxChooseCityEdit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxChooseCityEdit.FormattingEnabled = true;
+            this.comboBoxChooseCityEdit.Location = new System.Drawing.Point(149, 91);
+            this.comboBoxChooseCityEdit.Name = "comboBoxChooseCityEdit";
+            this.comboBoxChooseCityEdit.Size = new System.Drawing.Size(318, 24);
+            this.comboBoxChooseCityEdit.TabIndex = 14;
+            // 
+            // labelChooseBuyersCityEdit
+            // 
+            this.labelChooseBuyersCityEdit.AutoSize = true;
+            this.labelChooseBuyersCityEdit.Location = new System.Drawing.Point(24, 94);
+            this.labelChooseBuyersCityEdit.Name = "labelChooseBuyersCityEdit";
+            this.labelChooseBuyersCityEdit.Size = new System.Drawing.Size(119, 17);
+            this.labelChooseBuyersCityEdit.TabIndex = 13;
+            this.labelChooseBuyersCityEdit.Text = "Выберите город:";
+            // 
+            // dateTimePickerBuyersDateBirthDayEdit
+            // 
+            this.dateTimePickerBuyersDateBirthDayEdit.Location = new System.Drawing.Point(200, 52);
+            this.dateTimePickerBuyersDateBirthDayEdit.Name = "dateTimePickerBuyersDateBirthDayEdit";
+            this.dateTimePickerBuyersDateBirthDayEdit.Size = new System.Drawing.Size(267, 22);
+            this.dateTimePickerBuyersDateBirthDayEdit.TabIndex = 12;
+            // 
+            // labelBuyersDateBirthDayEdit
+            // 
+            this.labelBuyersDateBirthDayEdit.AutoSize = true;
+            this.labelBuyersDateBirthDayEdit.Location = new System.Drawing.Point(24, 52);
+            this.labelBuyersDateBirthDayEdit.Name = "labelBuyersDateBirthDayEdit";
+            this.labelBuyersDateBirthDayEdit.Size = new System.Drawing.Size(170, 17);
+            this.labelBuyersDateBirthDayEdit.TabIndex = 11;
+            this.labelBuyersDateBirthDayEdit.Text = "Введите дату рождения:";
             // 
             // dataGridViewEditBuyers
             // 
@@ -196,6 +258,7 @@ namespace MailingLists.Forms
             this.dataGridViewEditBuyers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewEditBuyers.Size = new System.Drawing.Size(757, 249);
             this.dataGridViewEditBuyers.TabIndex = 10;
+            this.dataGridViewEditBuyers.SelectionChanged += new System.EventHandler(this.dataGridViewShowBuyers_SelectionChanged);
             // 
             // textBoxBuyersNameEdit
             // 
@@ -224,6 +287,7 @@ namespace MailingLists.Forms
             this.buttonEditBuyers.TabIndex = 5;
             this.buttonEditBuyers.Text = "Изменить";
             this.buttonEditBuyers.UseVisualStyleBackColor = true;
+            this.buttonEditBuyers.Click += new System.EventHandler(this.buttonEditBuyers_Click);
             // 
             // tabPageDelete
             // 
@@ -258,6 +322,7 @@ namespace MailingLists.Forms
             this.buttonDeleteBuyers.TabIndex = 12;
             this.buttonDeleteBuyers.Text = "Удалить";
             this.buttonDeleteBuyers.UseVisualStyleBackColor = true;
+            this.buttonDeleteBuyers.Click += new System.EventHandler(this.buttonDeleteBuyers_Click);
             // 
             // dataGridViewDeleteBuyers
             // 
@@ -275,63 +340,7 @@ namespace MailingLists.Forms
             this.dataGridViewDeleteBuyers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewDeleteBuyers.Size = new System.Drawing.Size(769, 310);
             this.dataGridViewDeleteBuyers.TabIndex = 11;
-            // 
-            // dateTimePickerBuyersDateBirthDayAdd
-            // 
-            this.dateTimePickerBuyersDateBirthDayAdd.Location = new System.Drawing.Point(195, 55);
-            this.dateTimePickerBuyersDateBirthDayAdd.Name = "dateTimePickerBuyersDateBirthDayAdd";
-            this.dateTimePickerBuyersDateBirthDayAdd.Size = new System.Drawing.Size(231, 22);
-            this.dateTimePickerBuyersDateBirthDayAdd.TabIndex = 5;
-            // 
-            // labelCountryAdd
-            // 
-            this.labelCountryAdd.AutoSize = true;
-            this.labelCountryAdd.Location = new System.Drawing.Point(19, 97);
-            this.labelCountryAdd.Name = "labelCountryAdd";
-            this.labelCountryAdd.Size = new System.Drawing.Size(119, 17);
-            this.labelCountryAdd.TabIndex = 6;
-            this.labelCountryAdd.Text = "Выберите город:";
-            // 
-            // comboBoxChooseCountryAdd
-            // 
-            this.comboBoxChooseCountryAdd.FormattingEnabled = true;
-            this.comboBoxChooseCountryAdd.Location = new System.Drawing.Point(144, 94);
-            this.comboBoxChooseCountryAdd.Name = "comboBoxChooseCountryAdd";
-            this.comboBoxChooseCountryAdd.Size = new System.Drawing.Size(282, 24);
-            this.comboBoxChooseCountryAdd.TabIndex = 7;
-            // 
-            // comboBoxChooseBuyersCityEdit
-            // 
-            this.comboBoxChooseBuyersCityEdit.FormattingEnabled = true;
-            this.comboBoxChooseBuyersCityEdit.Location = new System.Drawing.Point(149, 91);
-            this.comboBoxChooseBuyersCityEdit.Name = "comboBoxChooseBuyersCityEdit";
-            this.comboBoxChooseBuyersCityEdit.Size = new System.Drawing.Size(318, 24);
-            this.comboBoxChooseBuyersCityEdit.TabIndex = 14;
-            // 
-            // labelChooseBuyersCityEdit
-            // 
-            this.labelChooseBuyersCityEdit.AutoSize = true;
-            this.labelChooseBuyersCityEdit.Location = new System.Drawing.Point(24, 94);
-            this.labelChooseBuyersCityEdit.Name = "labelChooseBuyersCityEdit";
-            this.labelChooseBuyersCityEdit.Size = new System.Drawing.Size(119, 17);
-            this.labelChooseBuyersCityEdit.TabIndex = 13;
-            this.labelChooseBuyersCityEdit.Text = "Выберите город:";
-            // 
-            // dateTimePickerBuyersDateBirthDayEdit
-            // 
-            this.dateTimePickerBuyersDateBirthDayEdit.Location = new System.Drawing.Point(200, 52);
-            this.dateTimePickerBuyersDateBirthDayEdit.Name = "dateTimePickerBuyersDateBirthDayEdit";
-            this.dateTimePickerBuyersDateBirthDayEdit.Size = new System.Drawing.Size(267, 22);
-            this.dateTimePickerBuyersDateBirthDayEdit.TabIndex = 12;
-            // 
-            // labelBuyersDateBirthDayEdit
-            // 
-            this.labelBuyersDateBirthDayEdit.AutoSize = true;
-            this.labelBuyersDateBirthDayEdit.Location = new System.Drawing.Point(24, 52);
-            this.labelBuyersDateBirthDayEdit.Name = "labelBuyersDateBirthDayEdit";
-            this.labelBuyersDateBirthDayEdit.Size = new System.Drawing.Size(170, 17);
-            this.labelBuyersDateBirthDayEdit.TabIndex = 11;
-            this.labelBuyersDateBirthDayEdit.Text = "Введите дату рождения:";
+            this.dataGridViewDeleteBuyers.SelectionChanged += new System.EventHandler(this.dataGridViewShowBuyers_SelectionChanged);
             // 
             // FormBuyers
             // 
@@ -377,10 +386,10 @@ namespace MailingLists.Forms
         private System.Windows.Forms.Label labelDeleteBuyers;
         private System.Windows.Forms.Button buttonDeleteBuyers;
         private System.Windows.Forms.DataGridView dataGridViewDeleteBuyers;
-        private System.Windows.Forms.ComboBox comboBoxChooseCountryAdd;
+        private System.Windows.Forms.ComboBox comboBoxChooseCityAdd;
         private System.Windows.Forms.Label labelCountryAdd;
         private System.Windows.Forms.DateTimePicker dateTimePickerBuyersDateBirthDayAdd;
-        private System.Windows.Forms.ComboBox comboBoxChooseBuyersCityEdit;
+        private System.Windows.Forms.ComboBox comboBoxChooseCityEdit;
         private System.Windows.Forms.Label labelChooseBuyersCityEdit;
         private System.Windows.Forms.DateTimePicker dateTimePickerBuyersDateBirthDayEdit;
         private System.Windows.Forms.Label labelBuyersDateBirthDayEdit;
