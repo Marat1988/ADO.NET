@@ -39,10 +39,6 @@ CREATE TABLE Buyers --Покупатели
 );
 GO
 
-CREATE UNIQUE NONCLUSTERED INDEX IX_Buyers_NameCityId
-ON Buyers (CityId, [Name]);
-GO
-
 CREATE TABLE GroupProduct --Разделы (группы товаров)
 (
 	GroupProductId INT IDENTITY (1,1),

@@ -44,3 +44,6 @@ C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork9-10\MailingLists\obj\Deb
 C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork9-10\MailingLists\obj\Debug\MailingLists.pdb
 C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork9-10\MailingLists\obj\Debug\MailingLists.Forms.FormCity.resources
 C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork9-10\MailingLists\obj\Debug\MailingLists.Forms.FormBuyers.resources
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork9-10\MailingLists\obj\Debug\MailingLists.Forms.FormBuyers.resources
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork9-10\MailingLists\obj\Debug\MailingLists.Forms.FormCity.resources
+C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork9-10\MailingLists\obj\Debug\MailingLists.Forms.FormGroupProduct.resources

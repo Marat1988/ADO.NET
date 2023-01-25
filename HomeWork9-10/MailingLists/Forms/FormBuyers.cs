@@ -64,7 +64,6 @@ namespace MailingLists.Forms
                     }
                 }
             }
-
         }
         private void tabControlBuyers_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -73,22 +72,43 @@ namespace MailingLists.Forms
         }
         private void ExecuteProcedure(int buyerId, string name, DateTime dateBirthDay, int cityId)
         {
-
+            try
+            {
+                using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["MyConnString"].ConnectionString))
+                {
+                    DynamicParameters parameters = new DynamicParameters();
+                    parameters.Add("@BuyersId", buyerId);
+                    parameters.Add("@Name", name);
+                    parameters.Add("@DateBirthday", dateBirthDay);
+                    parameters.Add("@CityId", cityId);
+                    parameters.Add("@LineAnswer", "", dbType: DbType.String, direction: ParameterDirection.Output);
+                    connection.Execute("up_BuyersAddEditDetele", parameters, commandType: CommandType.StoredProcedure);
+                    if (parameters.Get<string>("@LineAnswer").Length > 0)
+                    {
+                        MessageBox.Show(parameters.Get<string>("@LineAnswer").ToString(), "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    ShowInfo();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void buttonInputBuyers_Click(object sender, EventArgs e)
         {
-
+            ExecuteProcedure(0, textBoxBuyersNameAdd.Text, dateTimePickerBuyersDateBirthDayAdd.Value, ((KeyValuePair<int, string>)comboBoxChooseCityAdd.SelectedItem).Key);
         }
 
         private void buttonEditBuyers_Click(object sender, EventArgs e)
         {
-
+            ExecuteProcedure(BuyerId, textBoxBuyersNameEdit.Text, dateTimePickerBuyersDateBirthDayEdit.Value, ((KeyValuePair<int, string>)comboBoxChooseCityEdit.SelectedItem).Key);
         }
 
         private void buttonDeleteBuyers_Click(object sender, EventArgs e)
         {
-
+            ExecuteProcedure(-BuyerId, "", DateTime.Now, 0);
         }
 
         private void dataGridViewShowBuyers_SelectionChanged(object sender, EventArgs e)

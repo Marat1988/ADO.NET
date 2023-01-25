@@ -49,5 +49,14 @@ namespace MailingLists
             };
             formBuyers.ShowDialog();
         }
+
+        private void buttonGroupProduct_Click(object sender, EventArgs e)
+        {
+            FormGroupProduct formGroupProduct = new FormGroupProduct
+            {
+                Text = (sender as Button).Text
+            };
+            formGroupProduct.ShowDialog();
+        }
     }
 }

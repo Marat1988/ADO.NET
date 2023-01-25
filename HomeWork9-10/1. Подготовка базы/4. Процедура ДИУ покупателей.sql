@@ -1,7 +1,6 @@
 ﻿USE MailingLists;
 GO
 
-
 /*Процедура добавления, изменения, удаления покупателей*/
 CREATE PROCEDURE up_BuyersAddEditDetele
 @BuyersId INT, @Name VARCHAR(100), @DateBirthday DATETIME, @CityId INT, @LineAnswer VARCHAR(1000)='' out

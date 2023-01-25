@@ -1,4 +1,5 @@
 ﻿USE MailingLists;
+GO
 
 CREATE PROCEDURE up_CountryAddEditDetele
 @CountryId INT, @Name VARCHAR(100), @OKSM VARCHAR(5), @LineAnswer VARCHAR(1000)='' out
