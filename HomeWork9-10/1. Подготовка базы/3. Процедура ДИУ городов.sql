@@ -31,6 +31,7 @@ BEGIN
   IF NOT EXISTS(SELECT * FROM Country WHERE CountryId=@CountryId) SET @LineAnswer='Указанный город был удален другим пользователем!'
   IF @LineAnswer=''
   BEGIN
+  BEGIN TRAN
    UPDATE City SET [Name]=@Name, CountryId=@CountryId WHERE CityId=@CityId
    IF @@ERROR=0
    BEGIN

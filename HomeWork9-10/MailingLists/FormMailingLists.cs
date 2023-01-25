@@ -25,9 +25,20 @@ namespace MailingLists
 
         private void buttonCountry_Click(object sender, EventArgs e)
         {
-            FormCountry formCountry = new FormCountry();
-            formCountry.Text = (sender as Button).Text;
+            FormCountry formCountry = new FormCountry
+            {
+                Text = (sender as Button).Text
+            };
             formCountry.ShowDialog();
+        }
+
+        private void buttonCity_Click(object sender, EventArgs e)
+        {
+            FormCity formCity = new FormCity
+            {
+                Text = (sender as Button).Text
+            };
+            formCity.ShowDialog();
         }
     }
 }

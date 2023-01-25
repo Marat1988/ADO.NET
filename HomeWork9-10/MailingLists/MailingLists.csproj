@@ -81,6 +81,12 @@
     <Compile Include="FormMailingLists.Designer.cs">
       <DependentUpon>FormMailingLists.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCity.Designer.cs">
+      <DependentUpon>FormCity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormCountry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormMailingLists.resx">
       <DependentUpon>FormMailingLists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCity.resx">
+      <DependentUpon>FormCity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormCountry.resx">
       <DependentUpon>FormCountry.cs</DependentUpon>

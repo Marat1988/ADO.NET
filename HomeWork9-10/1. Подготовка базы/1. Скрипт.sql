@@ -68,8 +68,8 @@ CREATE TABLE Stock --Акции
 (
 	StockId INT IDENTITY (1,1),
 	[Name] VARCHAR(100) NOT NULL,
-	DateBegin DATETIME,
-	DateEnd DATETIME,
+	DateBegin DATETIME NOT NULL,
+	DateEnd DATETIME NOT NULL,
 	CountryId INT NOT NULL,
 	GroupProductId INT NOT NULL
 	CONSTRAINT PK_Stock_StockId PRIMARY KEY (StockId),
