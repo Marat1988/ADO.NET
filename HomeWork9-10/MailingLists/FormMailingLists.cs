@@ -40,5 +40,14 @@ namespace MailingLists
             };
             formCity.ShowDialog();
         }
+
+        private void buttonBuyers_Click(object sender, EventArgs e)
+        {
+            FormBuyers formBuyers = new FormBuyers
+            {
+                Text = (sender as Button).Text
+            };
+            formBuyers.ShowDialog();
+        }
     }
 }

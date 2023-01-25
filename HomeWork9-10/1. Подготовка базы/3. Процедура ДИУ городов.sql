@@ -9,7 +9,7 @@ BEGIN
  SET @LineAnswer=''
  IF @CityId=0
  BEGIN
-  IF NOT EXISTS(SELECT * FROM Country WHERE CountryId=@CountryId) SET @LineAnswer='Указанный город был удален другим пользователем!'
+  IF NOT EXISTS(SELECT * FROM Country WHERE CountryId=@CountryId) SET @LineAnswer='Указанная страна была удалена другим пользователем!'
   IF @LineAnswer=''
   BEGIN
   BEGIN TRAN
@@ -28,7 +28,7 @@ BEGIN
  END
  ELSE IF @CityId>0
  BEGIN
-  IF NOT EXISTS(SELECT * FROM Country WHERE CountryId=@CountryId) SET @LineAnswer='Указанный город был удален другим пользователем!'
+  IF NOT EXISTS(SELECT * FROM Country WHERE CountryId=@CountryId) SET @LineAnswer='Указанная страна была удалена другим пользователем!'
   IF @LineAnswer=''
   BEGIN
   BEGIN TRAN
