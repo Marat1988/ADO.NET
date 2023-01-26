@@ -109,13 +109,14 @@ namespace MailingLists.Forms
             // buttonInputStockProduct
             // 
             this.buttonInputStockProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonInputStockProduct.Location = new System.Drawing.Point(21, 94);
+            this.buttonInputStockProduct.Location = new System.Drawing.Point(24, 120);
             this.buttonInputStockProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonInputStockProduct.Name = "buttonInputStockProduct";
             this.buttonInputStockProduct.Size = new System.Drawing.Size(157, 48);
             this.buttonInputStockProduct.TabIndex = 4;
             this.buttonInputStockProduct.Text = "Добавить";
             this.buttonInputStockProduct.UseVisualStyleBackColor = true;
+            this.buttonInputStockProduct.Click += new System.EventHandler(this.buttonInputStockProduct_Click);
             // 
             // tabPageEdit
             // 
