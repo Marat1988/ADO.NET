@@ -34,7 +34,7 @@ namespace MailingLists.Forms
             this.buttonInfoShowCity = new System.Windows.Forms.Button();
             this.dataGridViewShowInfo = new System.Windows.Forms.DataGridView();
             this.labelChooseCity = new System.Windows.Forms.Label();
-            this.comboBoxChooseCity = new System.Windows.Forms.ComboBox();
+            this.comboBoxChooseCountry = new System.Windows.Forms.ComboBox();
             this.labelChooseBuyers = new System.Windows.Forms.Label();
             this.comboBoxChooseBuyers = new System.Windows.Forms.ComboBox();
             this.labelChooseGroupProduct = new System.Windows.Forms.Label();
@@ -51,6 +51,7 @@ namespace MailingLists.Forms
             this.buttonInfoStockProduct.TabIndex = 7;
             this.buttonInfoStockProduct.Text = "Отображение списка акционных товаров конкретного раздела";
             this.buttonInfoStockProduct.UseVisualStyleBackColor = true;
+            this.buttonInfoStockProduct.Click += new System.EventHandler(this.buttonInfoStockProduct_Click);
             // 
             // buttonInfoShowGroup
             // 
@@ -61,6 +62,7 @@ namespace MailingLists.Forms
             this.buttonInfoShowGroup.TabIndex = 6;
             this.buttonInfoShowGroup.Text = "Отображение списка разделов конкретного покупателя";
             this.buttonInfoShowGroup.UseVisualStyleBackColor = true;
+            this.buttonInfoShowGroup.Click += new System.EventHandler(this.buttonInfoShowGroup_Click);
             // 
             // buttonInfoShowCity
             // 
@@ -71,6 +73,7 @@ namespace MailingLists.Forms
             this.buttonInfoShowCity.TabIndex = 5;
             this.buttonInfoShowCity.Text = "Отображение списка городов конкретной страны";
             this.buttonInfoShowCity.UseVisualStyleBackColor = true;
+            this.buttonInfoShowCity.Click += new System.EventHandler(this.buttonInfoShowCity_Click);
             // 
             // dataGridViewShowInfo
             // 
@@ -99,13 +102,14 @@ namespace MailingLists.Forms
             this.labelChooseCity.TabIndex = 8;
             this.labelChooseCity.Text = "Выберите страну:";
             // 
-            // comboBoxChooseCity
+            // comboBoxChooseCountry
             // 
-            this.comboBoxChooseCity.FormattingEnabled = true;
-            this.comboBoxChooseCity.Location = new System.Drawing.Point(529, 270);
-            this.comboBoxChooseCity.Name = "comboBoxChooseCity";
-            this.comboBoxChooseCity.Size = new System.Drawing.Size(307, 24);
-            this.comboBoxChooseCity.TabIndex = 9;
+            this.comboBoxChooseCountry.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxChooseCountry.FormattingEnabled = true;
+            this.comboBoxChooseCountry.Location = new System.Drawing.Point(529, 270);
+            this.comboBoxChooseCountry.Name = "comboBoxChooseCountry";
+            this.comboBoxChooseCountry.Size = new System.Drawing.Size(307, 24);
+            this.comboBoxChooseCountry.TabIndex = 9;
             // 
             // labelChooseBuyers
             // 
@@ -118,6 +122,7 @@ namespace MailingLists.Forms
             // 
             // comboBoxChooseBuyers
             // 
+            this.comboBoxChooseBuyers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxChooseBuyers.FormattingEnabled = true;
             this.comboBoxChooseBuyers.Location = new System.Drawing.Point(529, 343);
             this.comboBoxChooseBuyers.Name = "comboBoxChooseBuyers";
@@ -135,6 +140,7 @@ namespace MailingLists.Forms
             // 
             // comboBoxChooseGroupProduct
             // 
+            this.comboBoxChooseGroupProduct.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxChooseGroupProduct.FormattingEnabled = true;
             this.comboBoxChooseGroupProduct.Location = new System.Drawing.Point(529, 414);
             this.comboBoxChooseGroupProduct.Name = "comboBoxChooseGroupProduct";
@@ -150,7 +156,7 @@ namespace MailingLists.Forms
             this.Controls.Add(this.labelChooseGroupProduct);
             this.Controls.Add(this.comboBoxChooseBuyers);
             this.Controls.Add(this.labelChooseBuyers);
-            this.Controls.Add(this.comboBoxChooseCity);
+            this.Controls.Add(this.comboBoxChooseCountry);
             this.Controls.Add(this.labelChooseCity);
             this.Controls.Add(this.buttonInfoStockProduct);
             this.Controls.Add(this.buttonInfoShowGroup);
@@ -173,7 +179,7 @@ namespace MailingLists.Forms
         private System.Windows.Forms.Button buttonInfoShowCity;
         private System.Windows.Forms.DataGridView dataGridViewShowInfo;
         private System.Windows.Forms.Label labelChooseCity;
-        private System.Windows.Forms.ComboBox comboBoxChooseCity;
+        private System.Windows.Forms.ComboBox comboBoxChooseCountry;
         private System.Windows.Forms.Label labelChooseBuyers;
         private System.Windows.Forms.ComboBox comboBoxChooseBuyers;
         private System.Windows.Forms.Label labelChooseGroupProduct;

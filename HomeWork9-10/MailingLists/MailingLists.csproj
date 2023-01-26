@@ -75,6 +75,7 @@
     <Compile Include="Class\LineStock.cs" />
     <Compile Include="Class\Product.cs" />
     <Compile Include="Class\Stock.cs" />
+    <Compile Include="Class\TempClass.cs" />
     <Compile Include="FormMailingLists.cs">
       <SubType>Form</SubType>
     </Compile>
