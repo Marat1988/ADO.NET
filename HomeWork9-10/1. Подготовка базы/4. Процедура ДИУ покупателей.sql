@@ -14,7 +14,7 @@ BEGIN
   BEGIN
   BEGIN TRAN
    INSERT INTO Buyers([Name], DateBirthday, CityId)
-   VALUES (@Name, @DateBirthday, @CityId)
+   VALUES (@Name, CAST(@DateBirthday AS DATE), @CityId)
    SET @BuyersId=ISNULL(SCOPE_IDENTITY()*(1-SIGN(@@ERROR)),0)
    IF @BuyersId!=0
    BEGIN
@@ -32,7 +32,7 @@ BEGIN
   IF @LineAnswer=''
   BEGIN
   BEGIN TRAN
-   UPDATE Buyers SET [Name]=@Name, DateBirthday=@DateBirthday, CityId=@CityId WHERE BuyersId=@BuyersId
+   UPDATE Buyers SET [Name]=@Name, DateBirthday=CAST(@DateBirthday AS DATE), CityId=@CityId WHERE BuyersId=@BuyersId
    IF @@ERROR=0
    BEGIN
     COMMIT TRAN 
