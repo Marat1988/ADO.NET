@@ -2,7 +2,7 @@
 GO
 
 /*Процедура добавления, изменения, удаления городов*/
-CREATE PROCEDURE up_CityAddEditDetele
+CREATE PROCEDURE [dbo].[up_CityAddEditDetele]
 @CityId INT, @Name VARCHAR(100), @CountryId INT, @LineAnswer VARCHAR(1000)='' out
 AS
 BEGIN
@@ -48,3 +48,4 @@ BEGIN
   DELETE FROM City WHERE CityId=ABS(@CityId)
  END
 END
+GO

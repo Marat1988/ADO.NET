@@ -1,7 +1,7 @@
 ﻿USE MailingLists;
 GO
 
-CREATE PROCEDURE up_CountryAddEditDetele
+CREATE PROCEDURE [dbo].[up_CountryAddEditDetele]
 @CountryId INT, @Name VARCHAR(100), @OKSM VARCHAR(5), @LineAnswer VARCHAR(1000)='' out
 AS
 BEGIN
@@ -47,3 +47,4 @@ BEGIN
   DELETE FROM Country WHERE CountryId=ABS(@CountryId)
  END
 END
+GO

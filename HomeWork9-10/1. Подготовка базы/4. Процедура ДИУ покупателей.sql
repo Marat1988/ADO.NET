@@ -2,7 +2,7 @@
 GO
 
 /*Процедура добавления, изменения, удаления покупателей*/
-CREATE PROCEDURE up_BuyersAddEditDetele
+CREATE PROCEDURE [dbo].[up_BuyersAddEditDetele]
 @BuyersId INT, @Name VARCHAR(100), @DateBirthday DATETIME, @CityId INT, @LineAnswer VARCHAR(1000)='' out
 AS
 BEGIN
@@ -48,3 +48,4 @@ BEGIN
   DELETE FROM Buyers WHERE BuyersId=ABS(@BuyersId)
  END
 END
+GO

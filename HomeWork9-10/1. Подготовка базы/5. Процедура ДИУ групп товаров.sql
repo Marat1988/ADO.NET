@@ -2,7 +2,7 @@
 GO
 
 /*Процедура добавления, изменения, удаления разделов (групп товаров)*/
-CREATE PROCEDURE up_GroupProductAddEditDelete
+CREATE PROCEDURE [dbo].[up_GroupProductAddEditDelete]
 @GroupProductId INT, @Name VARCHAR(100), @LineAnswer VARCHAR(1000)='' OUT
 AS
 BEGIN
@@ -48,3 +48,4 @@ BEGIN
   DELETE FROM GroupProduct WHERE GroupProductId=ABS(@GroupProductId)
  END
 END
+GO
