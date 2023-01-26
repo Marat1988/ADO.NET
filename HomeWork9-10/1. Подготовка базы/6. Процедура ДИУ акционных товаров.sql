@@ -2,7 +2,7 @@
 GO
 
 /*Процедура добавления, изменения, удаления разделов (групп товаров)*/
-CREATE PROCEDURE up_StockProductAddEditDelete
+CREATE PROCEDURE [dbo].[up_StockProductAddEditDelete]
 @LineStockId INT, @ProductId INT, @StockId INT, @Price MONEY, @LineAnswer VARCHAR(1000)='' OUT
 AS
 BEGIN
@@ -13,10 +13,9 @@ BEGIN
   IF NOT EXISTS(SELECT * 
 				FROM Stock
 				WHERE GroupProductId=(SELECT gp.GroupProductId 
-									  FROM LineStock ls
-									  INNER JOIN Product p ON ls.ProductId=p.ProductId
-									  INNER JOIN GroupProduct gp ON p.GroupProductId=gp.GroupProductId
-									  WHERE ls.StockId=@StockId AND ls.ProductId=@ProductId)) SET @LineAnswer='Акции разделены по группам (разделам) товаров. Запрещено добавление товаров в акцию, не подходящих по данным критериям!'
+									  FROM GroupProduct gp
+									  INNER JOIN Product p ON gp.GroupProductId=p.GroupProductId
+									  WHERE p.ProductId=@ProductId) AND StockId=@StockId) SET @LineAnswer='Акции разделены по группам (разделам) товаров. Запрещено добавление товаров в акцию, не подходящих по данным критериям!'
 
   IF @LineAnswer=''
   BEGIN
@@ -53,6 +52,7 @@ BEGIN
  END
  ELSE IF @LineStockId<0
  BEGIN
-  DELETE FROM GroupProduct WHERE GroupProductId=ABS(@LineStockId)
+  DELETE FROM LineStock WHERE LineStockId=ABS(@LineStockId)
  END
 END
+GO
