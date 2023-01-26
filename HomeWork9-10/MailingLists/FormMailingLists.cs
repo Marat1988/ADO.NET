@@ -17,7 +17,6 @@ namespace MailingLists
         {
             InitializeComponent();
         }
-
         private void buttonCountry_Click(object sender, EventArgs e)
         {
             FormCountry formCountry = new FormCountry
@@ -26,7 +25,6 @@ namespace MailingLists
             };
             formCountry.ShowDialog();
         }
-
         private void buttonCity_Click(object sender, EventArgs e)
         {
             FormCity formCity = new FormCity
@@ -35,7 +33,6 @@ namespace MailingLists
             };
             formCity.ShowDialog();
         }
-
         private void buttonBuyers_Click(object sender, EventArgs e)
         {
             FormBuyers formBuyers = new FormBuyers
@@ -44,7 +41,6 @@ namespace MailingLists
             };
             formBuyers.ShowDialog();
         }
-
         private void buttonGroupProduct_Click(object sender, EventArgs e)
         {
             FormGroupProduct formGroupProduct = new FormGroupProduct
@@ -53,7 +49,14 @@ namespace MailingLists
             };
             formGroupProduct.ShowDialog();
         }
-
+        private void buttonStockProduct_Click(object sender, EventArgs e)
+        {
+            FormStockProduct formStockProduct = new FormStockProduct
+            {
+                Text = (sender as Button).Text
+            };
+            formStockProduct.ShowDialog();
+        }
         private void buttonInfoHelp_Click(object sender, EventArgs e)
         {
             FormInfoHelp formInfoHelp = new FormInfoHelp
@@ -62,5 +65,6 @@ namespace MailingLists
             };
             formInfoHelp.ShowDialog();
         }
+
     }
 }

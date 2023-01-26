@@ -34,6 +34,7 @@ namespace MailingLists
             this.buttonBuyers = new System.Windows.Forms.Button();
             this.buttonGroupProduct = new System.Windows.Forms.Button();
             this.buttonInfoHelp = new System.Windows.Forms.Button();
+            this.buttonStockProduct = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonCountry
@@ -42,7 +43,7 @@ namespace MailingLists
             this.buttonCountry.Location = new System.Drawing.Point(45, 27);
             this.buttonCountry.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCountry.Name = "buttonCountry";
-            this.buttonCountry.Size = new System.Drawing.Size(517, 70);
+            this.buttonCountry.Size = new System.Drawing.Size(487, 55);
             this.buttonCountry.TabIndex = 0;
             this.buttonCountry.Text = "Справочник стран";
             this.buttonCountry.UseVisualStyleBackColor = true;
@@ -51,10 +52,10 @@ namespace MailingLists
             // buttonCity
             // 
             this.buttonCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonCity.Location = new System.Drawing.Point(45, 106);
+            this.buttonCity.Location = new System.Drawing.Point(45, 90);
             this.buttonCity.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCity.Name = "buttonCity";
-            this.buttonCity.Size = new System.Drawing.Size(517, 66);
+            this.buttonCity.Size = new System.Drawing.Size(487, 51);
             this.buttonCity.TabIndex = 1;
             this.buttonCity.Text = "Справочник городов";
             this.buttonCity.UseVisualStyleBackColor = true;
@@ -63,10 +64,10 @@ namespace MailingLists
             // buttonBuyers
             // 
             this.buttonBuyers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonBuyers.Location = new System.Drawing.Point(45, 180);
+            this.buttonBuyers.Location = new System.Drawing.Point(45, 149);
             this.buttonBuyers.Margin = new System.Windows.Forms.Padding(4);
             this.buttonBuyers.Name = "buttonBuyers";
-            this.buttonBuyers.Size = new System.Drawing.Size(517, 66);
+            this.buttonBuyers.Size = new System.Drawing.Size(487, 51);
             this.buttonBuyers.TabIndex = 2;
             this.buttonBuyers.Text = "Справочник покупателей";
             this.buttonBuyers.UseVisualStyleBackColor = true;
@@ -75,10 +76,10 @@ namespace MailingLists
             // buttonGroupProduct
             // 
             this.buttonGroupProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonGroupProduct.Location = new System.Drawing.Point(45, 254);
+            this.buttonGroupProduct.Location = new System.Drawing.Point(45, 208);
             this.buttonGroupProduct.Margin = new System.Windows.Forms.Padding(4);
             this.buttonGroupProduct.Name = "buttonGroupProduct";
-            this.buttonGroupProduct.Size = new System.Drawing.Size(517, 66);
+            this.buttonGroupProduct.Size = new System.Drawing.Size(487, 51);
             this.buttonGroupProduct.TabIndex = 3;
             this.buttonGroupProduct.Text = "Справочник разделов/групп товаров";
             this.buttonGroupProduct.UseVisualStyleBackColor = true;
@@ -87,20 +88,33 @@ namespace MailingLists
             // buttonInfoHelp
             // 
             this.buttonInfoHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonInfoHelp.Location = new System.Drawing.Point(45, 328);
+            this.buttonInfoHelp.Location = new System.Drawing.Point(45, 326);
             this.buttonInfoHelp.Margin = new System.Windows.Forms.Padding(4);
             this.buttonInfoHelp.Name = "buttonInfoHelp";
-            this.buttonInfoHelp.Size = new System.Drawing.Size(517, 66);
+            this.buttonInfoHelp.Size = new System.Drawing.Size(487, 51);
             this.buttonInfoHelp.TabIndex = 4;
             this.buttonInfoHelp.Text = "Справочная информация";
             this.buttonInfoHelp.UseVisualStyleBackColor = true;
             this.buttonInfoHelp.Click += new System.EventHandler(this.buttonInfoHelp_Click);
             // 
+            // buttonStockProduct
+            // 
+            this.buttonStockProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonStockProduct.Location = new System.Drawing.Point(45, 267);
+            this.buttonStockProduct.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonStockProduct.Name = "buttonStockProduct";
+            this.buttonStockProduct.Size = new System.Drawing.Size(487, 51);
+            this.buttonStockProduct.TabIndex = 5;
+            this.buttonStockProduct.Text = "Акционные товары";
+            this.buttonStockProduct.UseVisualStyleBackColor = true;
+            this.buttonStockProduct.Click += new System.EventHandler(this.buttonStockProduct_Click);
+            // 
             // FormMailingLists
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 475);
+            this.ClientSize = new System.Drawing.Size(591, 436);
+            this.Controls.Add(this.buttonStockProduct);
             this.Controls.Add(this.buttonInfoHelp);
             this.Controls.Add(this.buttonGroupProduct);
             this.Controls.Add(this.buttonBuyers);
@@ -122,6 +136,7 @@ namespace MailingLists
         private System.Windows.Forms.Button buttonBuyers;
         private System.Windows.Forms.Button buttonGroupProduct;
         private System.Windows.Forms.Button buttonInfoHelp;
+        private System.Windows.Forms.Button buttonStockProduct;
     }
 }
 

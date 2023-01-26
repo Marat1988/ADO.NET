@@ -112,6 +112,12 @@
     <Compile Include="Forms\FormInfoHelp.Designer.cs">
       <DependentUpon>FormInfoHelp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormStockProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormStockProduct.Designer.cs">
+      <DependentUpon>FormStockProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormMailingLists.resx">
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormInfoHelp.resx">
       <DependentUpon>FormInfoHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormStockProduct.resx">
+      <DependentUpon>FormStockProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
