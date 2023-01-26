@@ -48,3 +48,4 @@ C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork9-10\MailingLists\obj\Debug\Mailing
 C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork9-10\MailingLists\obj\Debug\MailingLists.Forms.FormCity.resources
 C:\Users\HP\Documents\GitHub\ADO.NET\HomeWork9-10\MailingLists\obj\Debug\MailingLists.Forms.FormGroupProduct.resources
 C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork9-10\MailingLists\obj\Debug\MailingLists.Forms.FormGroupProduct.resources
+C:\Users\Mss.TRIBRATA\Documents\GitHub\ADO.NET\HomeWork9-10\MailingLists\obj\Debug\MailingLists.Forms.FormInfoHelp.resources

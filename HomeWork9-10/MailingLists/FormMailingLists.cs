@@ -18,11 +18,6 @@ namespace MailingLists
             InitializeComponent();
         }
 
-        private void FormMailingLists_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonCountry_Click(object sender, EventArgs e)
         {
             FormCountry formCountry = new FormCountry
@@ -57,6 +52,15 @@ namespace MailingLists
                 Text = (sender as Button).Text
             };
             formGroupProduct.ShowDialog();
+        }
+
+        private void buttonInfoHelp_Click(object sender, EventArgs e)
+        {
+            FormInfoHelp formInfoHelp = new FormInfoHelp
+            {
+                Text = (sender as Button).Text
+            };
+            formInfoHelp.ShowDialog();
         }
     }
 }
